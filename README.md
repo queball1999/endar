@@ -1,4 +1,15 @@
-# Endar
+<div align="center">
+  <img src="/img/endar.png" height="200"/>
+</div>
+
+<h1 align="center" style="margin-top: -10px"> Endar </h1>
+<p align="center" style="width: 100;">
+   <a href="https://github.com/queball1999/endar/wiki">Docs</a>
+   |
+   <a href="https://discord.gg/ZXAsScpe">Discord</a>
+</p>
+
+This is a continuation of [tomkeene's](https://github.com/tomkeene) project, [endar](https://github.com/tomkeene/endar).
 
 ### Table of Contents
 1. [About](#about)
@@ -102,6 +113,9 @@ Add policy to the default group          |
 All done! Now your agent will execute this compliance task and send the results. You can view the results by going to `Agents`, selecting your agent, and then clicking the `Compliance` tab on the left.
 
 ### Roadmap
+For the latest project plans and progress, please visit our updated [roadmap](https://github.com/queball1999/endar/projects?query=is%3Aopen).
+
+Below is a list of improvements desired by the original developer. We will do our best to review and possibly implement the following:
 - [ ] Improve monitoring to gather software, services, scheduled tasks (cronjobs), users and groups
 - [ ] Improve monitoring to collect process specific metrics
 - [ ] Improve deployment - currently a binary is provided by OS specific installers would be nice
