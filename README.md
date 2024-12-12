@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="/img/endar.png" height="150" style="border-radius: 15px;"/>
+  <img src="/img/endar_rounded.png" height="150"/>
 </div>
 
 <h1 align="center" style="margin-top: -5px"> Endar </h1>
