@@ -19,6 +19,9 @@ services:
       - DOC_LINK=https://github.com/queball1999/endar
       - VERSION=${VERSION:-1.0.0}
       - APP_NAME=Endar
+      - FLASK_ENV=production
+    env_file:
+      - .env.dev
   postgres:
     container_name: postgres
     image: postgres

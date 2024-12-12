@@ -1,0 +1,20 @@
+services:
+  endar_server:
+    volumes:
+      - .:/app  # Bind mount for local development
+    environment:
+      - FLASK_ENV=development  # Enable Flask's debug mode
+      - SQLALCHEMY_DATABASE_URI=postgresql://${POSTGRES_USER:-db1}:${POSTGRES_PASSWORD:-db1}@${POSTGRES_HOST:-postgres}/${POSTGRES_DB:-dev_db1}
+      - POSTGRES_DB=${POSTGRES_DB:-dev_db1}
+      - DEFAULT_EMAIL=${DEFAULT_EMAIL:-admin@example.com}
+      - DEFAULT_PASSWORD=${DEFAULT_PASSWORD:-dev_admin}
+    env_file:
+      - .env.dev
+
+  postgres:
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-db1}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-db1}
+      POSTGRES_DB: ${POSTGRES_DB:-dev_db1}
+    env_file:
+      - .env.dev

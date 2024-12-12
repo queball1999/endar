@@ -44,12 +44,12 @@ class Config:
 class DevelopmentConfig(Config):
     DEBUG = True
     SQLALCHEMY_DATABASE_URI = os.environ.get('SQLALCHEMY_DATABASE_URI') or \
-        "postgresql://db1:db1@postgres_db/db1"
+        "postgresql://db1:db1@postgres_db/dev_db1"
 
 class TestingConfig(Config):
     TESTING = True
     SQLALCHEMY_DATABASE_URI = os.environ.get('SQLALCHEMY_DATABASE_URI') or \
-        "postgresql://db1:db1@postgres_db/db1"
+        "postgresql://db1:db1@postgres_db/test_db1"
     WTF_CSRF_ENABLED = False
 
 config = {

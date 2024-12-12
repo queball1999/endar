@@ -1,8 +1,8 @@
 <div align="center">
-  <img src="/img/endar.png" height="200"/>
+  <img src="/img/endar.png" height="150" style="border-radius: 15px;"/>
 </div>
 
-<h1 align="center" style="margin-top: -10px"> Endar </h1>
+<h1 align="center" style="margin-top: -5px"> Endar </h1>
 <p align="center" style="width: 100;">
    <a href="https://github.com/queball1999/endar/wiki">Docs</a>
    |
