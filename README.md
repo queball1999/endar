@@ -6,6 +6,8 @@
 <p align="center" style="width: 100;">
    <a href="https://github.com/queball1999/endar/wiki">Docs</a>
    |
+   <a href="https://app.getpostman.com/join-team?invite_code=6ae6aa7c617c7091353b8826db86b2979a130e937b41a975a8d1209a84026e56&target_code=d0285d3e4ca53345942ad63a66c2cdc3">Postman Workspace</a>
+   |
    <a href="https://discord.gg/ZXAsScpe">Discord</a>
 </p>
 
