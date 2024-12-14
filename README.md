@@ -8,7 +8,7 @@
    |
    <a href="https://www.postman.com/qssapi/endar/overview">Postman Workspace</a>
    |
-   <a href="https://discord.gg/ZXAsScpe">Discord</a>
+   <a href="https://discord.gg/TkSKvCk6rf">Discord</a>
 </p>
 
 This is a continuation of [tomkeene's](https://github.com/tomkeene) project, [endar](https://github.com/tomkeene/endar).
