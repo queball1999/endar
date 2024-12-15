@@ -4,9 +4,10 @@ services:
     image: endar_server
     depends_on:
       - postgres
+      - code_server
     networks:
-      - db_nw
       - web_nw
+      - db_nw
     ports:
       - "5000:5000"
     restart: unless-stopped
@@ -21,7 +22,14 @@ services:
       - APP_NAME=Endar
       - FLASK_ENV=production
     env_file:
-      - .env.dev
+      - .env.prod
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.endar_server.rule=Host(`192.168.4.142`)"
+      - "traefik.http.routers.endar_server.entrypoints=web"
+      - "traefik.http.services.endar_server.loadbalancer.server.port=5000"
+      - "traefik.docker.network=endar_web_nw"
+  
   postgres:
     container_name: postgres
     image: postgres
@@ -30,18 +38,62 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-db1}
       POSTGRES_DB: ${POSTGRES_DB:-db1}
       PGDATA: /data/postgres
-    #volumes:
-    #   - postgres:/data/postgres
-    #ports:
-    #  - "5432:5432"
     networks:
       - db_nw
     restart: unless-stopped
 
+  code_server:
+    container_name: code_server
+    image: codercom/code-server:latest
+    user: "1000:1000"
+    networks:
+      - web_nw
+    ports:
+      - "8443:8080"
+    environment:
+      - PASSWORD=${DEFAULT_PASSWORD:-admin}  # Same credentials as Endar server
+      - GIT_AUTHOR_NAME=Endar
+      - GIT_AUTHOR_EMAIL=admin@example.com
+    working_dir: /home/coder/scripts  # Set the working directory
+    volumes:
+      - ./code-server:/home/coder/.local/share/code-server:rw
+      - ./code-server/scripts:/home/coder/scripts:rw  # Mount scripts directory
+      - ./code-server/.config:/home/coder/.config:rw
+      - ./code-server/.cache:/home/coder/.cache:rw
+    read_only: true
+    tmpfs:
+      - /tmp  # Allow temporary storage for system functions
+    security_opt:
+      - no-new-privileges:true  # Prevent privilege escalation
+    command: code-server --disable-telemetry --disable-getting-started-override --disable-file-downloads --cert --user-data-dir=/home/coder/scripts
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.code_server.rule=Host(`192.168.4.142`) && PathPrefix(`/code-server`)"
+      - "traefik.http.routers.code_server.entrypoints=web"
+      - "traefik.http.routers.code_server.middlewares=code_server_strip"
+      - "traefik.http.services.code_server.loadbalancer.server.port=8080"
+      - "traefik.http.middlewares.code_server_strip.stripprefix.prefixes=/code-server"
+
+  traefik:
+    image: traefik:v2.9
+    container_name: traefik
+    ports:
+      - "80:80"       # HTTP
+      - "443:443"     # HTTPS
+    networks:
+      - web_nw
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./traefik.yml:/etc/traefik/traefik.yml  # Traefik configuration file
+    restart: unless-stopped
+    labels:
+      - "traefik.docker.network=endar_web_nw"
+
 networks:
-  db_nw:
-    driver: bridge
   web_nw:
+    driver: bridge
+  db_nw:
     driver: bridge
 volumes:
   dbdata:

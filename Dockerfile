@@ -3,7 +3,7 @@ FROM python:3.8-slim-buster
 WORKDIR /app
 
 RUN apt-get update \
-    && apt-get -y install libpq-dev gcc \
+    && apt-get -y install libpq-dev gcc git\
     && pip3 install psycopg2
 
 COPY requirements.txt requirements.txt

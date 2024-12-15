@@ -1,0 +1,41 @@
+api:
+  dashboard: false
+  insecure: true  # Set to false in production
+
+entryPoints:
+  web:
+    address: ":80"
+  websecure:
+    address: ":443"
+
+providers:
+  docker:
+    exposedByDefault: false  # Only expose services with explicit labels
+
+log:
+  level: DEBUG
+  filePath: "/var/log/traefik/traefik.log"  # Specify the desired log file path
+  format: common  # Options: 'common' (default) or 'json'
+
+accessLog:
+  filePath: "/var/log/traefik/access.log"  # Specify the path where you want the access logs to be saved
+  format: json  # Optional: Use 'json' for JSON format; default is 'common' (CLF)
+  bufferingSize: 100  # Optional: Number of log lines to buffer before writing to the file
+  filters:  # Optional: Apply filters to limit the logs
+    statusCodes:
+      - "200"
+      - "300-302"
+      - "404"
+    retryAttempts: true
+    minDuration: "10ms"
+  fields:  # Optional: Control which fields and headers are logged
+    defaultMode: keep
+    names:
+      ClientUsername: drop
+    headers:
+      defaultMode: keep
+      names:
+        User-Agent: redact
+        Authorization: drop
+        Content-Type: keep
+

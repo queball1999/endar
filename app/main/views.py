@@ -191,3 +191,7 @@ def view_compliance_task_results(id):
     results = task.results.order_by(ComplianceTaskResults.id.desc()).all()
     return render_template("view_compliance_task_results.html", task=task,
         results=results)
+
+@main.route('/scripts')
+def scripts():
+    return render_template('scripts.html')

@@ -1,0 +1,55 @@
+{
+  "workbench.colorTheme": "Default Dark+",               // Sets the dark theme
+  "workbench.startupEditor": "none",                     // Disables the welcome page
+  "workbench.panel.defaultLocation": "bottom", // Set panel location
+  "terminal.integrated.defaultLocation": null, // Prevents the terminal from being displayed anywhere
+  "extensions.autoCheckUpdates": false,                  // Disables automatic extension updates
+  "extensions.autoUpdate": false,                        // Disables extension updates
+  "extensions.supportUntrustedWorkspaces": false,        // Disables extensions for untrusted workspaces
+  "files.autoSave": "onFocusChange",                     // Automatically saves files when focus changes
+  "files.trimTrailingWhitespace": true,                  // Trims trailing whitespace on save
+  "security.workspace.trust.enabled": false,             // Disables workspace trust prompts
+  "workbench.settings.editor": "json",                   // Locks settings editor to JSON format
+  "workbench.settings.openDefaultSettings": false,       // Prevents opening default settings
+  "workbench.statusBar.visible": false,                   // Shows the status bar
+  "workbench.editor.enablePreview": false,               // Disables preview mode for opened files
+  "explorer.confirmDelete": true,                        // Confirms file deletions
+  "explorer.confirmDragAndDrop": true,                   // Confirms drag-and-drop actions
+  "workbench.activityBar.location": "hidden",            // Hides activity bar
+  "explorer.openEditors.visible": 0,                      // Disables the open editors pane
+  "git.enabled": true,              // Enable Git integration
+  "git.allowForcePush": true,       // Optional: Allow force-pushes
+  "git.autofetch": true,            // Enable automatic fetching of changes
+  "files.exclude": {
+    "**/.svn": true,                       // Exclude SVN directories
+    "**/node_modules": true,               // Exclude node_modules
+    "**/.DS_Store": true,                  // Exclude macOS metadata files
+    "**/.cache": true,                     // Exclude Linux cache directories
+    "**/.config": true,                    // Exclude Linux config directories
+    "**/.local": true,                     // Exclude Linux local directories
+    "**/.bash*": true,                     // Exclude bash-related files
+    "**/.profile": true,                   // Exclude .profile files
+    "**/.git": true,                       // Exclude Git metadata
+    "**/etc": true,                        // Exclude Linux system config directory
+    "**/usr": true,                        // Exclude /usr directories
+    "**/var": true,                        // Exclude /var directories
+    "**/lib": true,                        // Exclude /lib directories
+    "**/bin": true,                        // Exclude /bin directories
+    "**/sbin": true,                       // Exclude /sbin directories
+    "**/opt": true,                        // Exclude /opt directories
+    "**/root": true,                       // Exclude root home directory
+    "**/tmp": true,                        // Exclude /tmp directories
+    "**/mnt": true,                        // Exclude /mnt directories
+    "**/media": true,                      // Exclude /media directories
+    "**/boot": true,                       // Exclude /boot directory
+    "**/dev": true,                        // Exclude /dev directory
+    "**/proc": true,                       // Exclude /proc directory
+    "**/sys": true,                        // Exclude /sys directory
+    "**/run": true,                        // Exclude /run directory
+    "**/snap": true,                       // Exclude /snap directory
+    "**/lost+found": true,                  // Exclude lost+found
+    "**/lib64": true,                       // Exclude /lib64 directory
+    "**/srv": true,                          // Exclude /srv directory
+    "**./.dockerenv": true                    // Exclude Docker env directories
+}
+}

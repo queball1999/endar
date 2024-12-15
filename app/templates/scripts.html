@@ -1,0 +1,11 @@
+{% extends "layouts/basic.html" %}
+
+{%block header_title%}Script Library<p class="text-sm text-gray-500 font-medium">Welcome to the Script Library! This is your personal space to create, manage, and organize your scripts. Add your own scripts, customize them, and keep everything streamlined in one place. Need to collaborate or sync with others? You can easily clone a Git repository to integrate external scripts into your library.</p>{%endblock%}
+{%block header_actions%}<a href="/code-server/?folder=/home/coder/scripts" class="btn btn-sm" target="_blank">Open in Tab</a>{%endblock%}
+
+
+{% block content %}
+<div style="min-height: 600px; height: 100%; overflow: auto;">
+    <iframe src="/code-server/?folder=/home/coder/scripts" frameborder="0" style="width: 100%; height: 100%;"></iframe>
+</div>  
+{% endblock %}
