@@ -52,3 +52,8 @@ venv
 # Temp folder
 tmp
 
+# Code Server
+/code-server/*
+!/code-server/User/settings.json
+!/code-server/User/keybindings.json
+

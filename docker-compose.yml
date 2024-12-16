@@ -45,7 +45,7 @@ services:
   code_server:
     container_name: code_server
     image: codercom/code-server:latest
-    user: "1000:1000"
+    user: 1000:1000
     networks:
       - web_nw
     ports:
@@ -57,7 +57,7 @@ services:
     working_dir: /home/coder/scripts  # Set the working directory
     volumes:
       - ./code-server:/home/coder/.local/share/code-server:rw
-      - ./code-server/scripts:/home/coder/scripts:rw  # Mount scripts directory
+      - ./code-server/scripts:/home/coder/scripts:rw
       - ./code-server/.config:/home/coder/.config:rw
       - ./code-server/.cache:/home/coder/.cache:rw
     read_only: true
@@ -65,7 +65,9 @@ services:
       - /tmp  # Allow temporary storage for system functions
     security_opt:
       - no-new-privileges:true  # Prevent privilege escalation
-    command: code-server --disable-telemetry --disable-getting-started-override --disable-file-downloads --cert --user-data-dir=/home/coder/scripts
+    cap_drop:
+      - ALL  # Drop all capabilities
+    command: code-server --disable-telemetry --disable-getting-started-override --disable-file-downloads
     restart: unless-stopped
     labels:
       - "traefik.enable=true"
