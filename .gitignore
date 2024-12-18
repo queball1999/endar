@@ -56,4 +56,4 @@ tmp
 /code-server/*
 !/code-server/User/settings.json
 !/code-server/User/keybindings.json
-
+!/code-server/scripts/

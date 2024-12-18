@@ -1,33 +1,6 @@
 [
-  // Ones to keep
-  { "key": "ctrl+c", "command": "editor.action.clipboardCopyAction" },
-  { "key": "ctrl+v", "command": "editor.action.clipboardPasteAction" },
-  { "key": "ctrl+shift+k", "command": "editor.action.deleteLines" },
-  { "key": "ctrl+x", "command": "editor.action.clipboardCutAction" },
-  { "key": "ctrl+z", "command": "undo" },
-  { "key": "ctrl+y", "command": "redo" },
-  { "key": "ctrl+a", "command": "editor.action.selectAll" },
-  { "key": "ctrl+f", "command": "actions.find" },
-  { "key": "ctrl+n", "command": "workbench.action.files.newUntitledFile" },
-  { "key": "ctrl+o", "command": "workbench.action.files.openFile" },
-  { "key": "ctrl+w", "command": "workbench.action.closeActiveEditor" },
-  { "key": "ctrl+tab", "command": "workbench.action.nextEditor" },
-  { "key": "ctrl+shift+tab", "command": "workbench.action.previousEditor" },
-  { "key": "ctrl+up", "command": "cursorUp" },
-  { "key": "ctrl+down", "command": "cursorDown" },
-  { "key": "ctrl+left", "command": "cursorWordLeft" },
-  { "key": "ctrl+right", "command": "cursorWordRight" },
-  { "key": "ctrl+home", "command": "cursorTop" },
-  { "key": "ctrl+end", "command": "cursorBottom" },
-  { "key": "ctrl+shift+up", "command": "editor.action.moveLinesUpAction" },
-  { "key": "ctrl+shift+down", "command": "editor.action.moveLinesDownAction" },
-  { "key": "ctrl+shift+left", "command": "cursorWordLeftSelect" },
-  { "key": "ctrl+shift+right", "command": "cursorWordRightSelect" },
-  { "key": "ctrl+shift+home", "command": "cursorTopSelect" },
-  { "key": "ctrl+shift+end", "command": "cursorBottomSelect" },
-  { "key": "ctrl+shift+f", "command": "workbench.action.findInFiles" },
-  { "key": "ctrl+shift+o", "command": "workbench.action.quickOpen" },
-  // Ones to remove
+  // Ones to remove.
+  // Any keybinding not defined will have default one
   { "key": "escape escape", "command": "noop" },
   { "key": "shift+escape", "command": "noop" },
   { "key": "cmd+down", "command": "noop" },
@@ -337,7 +310,7 @@
   { "key": "cmd+home", "command": "noop" },
   { "key": "alt+cmd+pageup", "command": "noop" },
   { "key": "ctrl+shift+5", "command": "noop" },
-  { "key": "ctrl+`", "command": "noop" },
+  { "key": "ctrl+,", "command": "noop" },
   { "key": "alt+cmd+0", "command": "noop" },
   { "key": "ctrl+cmd+f", "command": "noop" },
   { "key": "cmd+j", "command": "noop" },
@@ -373,6 +346,5 @@
   { "key": "ctrl+shift+space", "command": "noop" },
   { "key": "shift+alt+r", "command": "noop" },
   { "key": "ctrl+s", "command": "noop" },
-  { "key": "ctrl+,", "command": "noop" },
   { "key": "ctrl+shift+p", "command": "noop" }
 ]

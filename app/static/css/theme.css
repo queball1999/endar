@@ -1,0 +1,40 @@
+:root {
+    --background-color-light: #ffffff;
+    --text-color-light: #ffffff;
+    --background-color-dark: #1a1a1a;
+    --text-color-dark: #ffffff;
+
+    --header-background-light: #ffffff;
+    --header-text-light: #000000;
+    --header-background-dark: #363636;
+    --header-text-dark: #ffffff;
+}
+
+body.light-mode {
+    --background-color: var(--background-color-light);
+    --text-color: var(--text-color-light);
+    --header-background: var(--header-background-light);
+    --header-text: var(--header-text-light);
+}
+
+body.dark-mode {
+    --background-color: var(--background-color-dark);
+    --text-color: var(--text-color-dark);
+    --header-background: var(--header-background-dark);
+    --header-text: var(--header-text-dark);
+}
+
+body, main {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: var(--header-background);
+    color: var(--header-text);
+    --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
