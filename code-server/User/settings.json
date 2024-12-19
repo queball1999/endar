@@ -12,8 +12,7 @@
   "files.trimTrailingWhitespace": true,                  // Trims trailing whitespace on save
   "security.workspace.trust.enabled": false,             // Disables workspace trust prompts
   "workbench.settings.editor": "json",                   // Locks settings editor to JSON format
-  "workbench.settings.openDefaultSettings": false, // Shows the status bar
-  "workbench.editor.enablePreview": false,               // Disables preview mode for opened files
+  "workbench.settings.openDefaultSettings": false, // Disables preview mode for opened files
   "explorer.confirmDelete": true,                        // Confirms file deletions
   "explorer.confirmDragAndDrop": true,                   // Confirms drag-and-drop actions
   "workbench.activityBar.location": "hidden",
