@@ -56,4 +56,5 @@ tmp
 /code-server/*
 !/code-server/User/settings.json
 !/code-server/User/keybindings.json
+!/code-server/restricted_shell.sh
 !/code-server/scripts/
