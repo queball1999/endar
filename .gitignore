@@ -58,3 +58,7 @@ tmp
 !/code-server/User/keybindings.json
 !/code-server/restricted_shell.sh
 !/code-server/scripts/
+
+# Log Files
+/app/*.log
+app/app.log

@@ -31,3 +31,93 @@
 2025-01-08 02:54:32,670 [INFO] [/assets] Entered assets endpoint
 2025-01-08 02:54:34,787 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
 2025-01-08 02:54:34,810 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-08 16:00:15,867 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-08 16:00:15,892 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-08 16:03:37,468 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-08 16:03:37,501 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-08 16:09:21,525 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-08 16:09:21,553 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-08 16:19:02,992 [INFO] within has_valid_tenant_key
+2025-01-08 16:19:02,992 [INFO] [has_valid_tenant_key] TOKEN: bd4abf46edc94d29906fefc2a98b9f13
+2025-01-08 16:19:03,017 [INFO] [has_valid_tenant_key] TENANT: None
+2025-01-08 16:19:03,017 [INFO] [has_valid_tenant_key] Invalid tenant token
+2025-01-08 16:21:52,934 [INFO] within has_valid_tenant_key
+2025-01-08 16:21:52,934 [INFO] [has_valid_tenant_key] TOKEN: ff89c9f387e747388999e4cb22943f90
+2025-01-08 16:21:52,954 [INFO] [has_valid_tenant_key] TENANT: <Tenant 1>
+2025-01-08 16:21:52,955 [INFO] [has_valid_tenant_key] Tenant is valid
+2025-01-08 16:21:52,955 [INFO] [/register] Entered register agent endpoint
+2025-01-08 16:21:52,956 [INFO] [/register] PAYLOAD: {'key': 'agent-123', 'token': 'ff89c9f387e747388999e4cb22943f90', 'version': '1.0.0', 'enabled': True, 'install_group': 'default', 'public_addr': '192.168.1.100', 'country_code': 'US', 'country_name': 'United States', 'region_name': 'California', 'city_name': 'San Francisco', 'lat': '37.7749', 'long': '-122.4194', 'uninstall': False, 'cpu_count': 4, 'logical_cpu_count': 4, 'memory': '16 GB', 'hostname': 'agent-123', 'fqdn': 'agent-123.local', 'domain': 'local', 'forest': 'local', 'dn': 'CN=agent-123,OU=Computers,DC=local', 'site': 'default', 'domain_joined': True, 'is_dc': False, 'family': 'Windows', 'release': '10', 'sys_version': '10.0.19042', 'install_type': 'full', 'edition': 'Pro', 'build': '19042', 'machine': 'x64', 'local_addr': '192.168.1.100', 'processor': 'Intel Core i7', 'last_boot': '2022-01-01 12:00:00', 'last_active': '2022-01-01 12:00:00', 'svc_start': '2022-01-01 12:00:00', 'svc_uptime': '3600', 'uptime': '3600'}
+2025-01-08 16:21:53,022 [INFO] [/register] AGENT_ID: 49699a5e30cf4602a76fe332fa66031b
+2025-01-08 16:21:56,948 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-08 16:21:57,039 [INFO] [/assets] Entered assets endpoint
+2025-01-08 17:00:44,281 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-08 17:00:44,300 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-08 17:00:49,613 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-08 17:00:49,702 [INFO] [/assets] Entered assets endpoint
+2025-01-08 17:01:02,334 [INFO] within has_valid_tenant_and_agent
+2025-01-08 17:01:05,368 [INFO] within has_valid_tenant_key
+2025-01-08 17:01:05,369 [INFO] [has_valid_tenant_key] TOKEN: cb0c5f270efd4a73b7b840f1f9bf3525
+2025-01-08 17:01:05,375 [INFO] [has_valid_tenant_key] TENANT: None
+2025-01-08 17:01:05,375 [INFO] [has_valid_tenant_key] Invalid tenant token
+2025-01-08 17:01:28,991 [INFO] within has_valid_tenant_and_agent
+2025-01-08 17:01:32,039 [INFO] within has_valid_tenant_key
+2025-01-08 17:01:32,040 [INFO] [has_valid_tenant_key] TOKEN: ff89c9f387e747388999e4cb22943f90
+2025-01-08 17:01:32,051 [INFO] [has_valid_tenant_key] TENANT: <Tenant 1>
+2025-01-08 17:01:32,051 [INFO] [has_valid_tenant_key] Tenant is valid
+2025-01-08 17:01:32,051 [INFO] [/register] Entered register agent endpoint
+2025-01-08 17:01:32,052 [INFO] [/register] Agent key found in headers: f943cdf1fa1c4df396efa348e0186019
+2025-01-08 17:01:32,061 [INFO] [/register] PAYLOAD: {'fqdn': 'que-api01.quynn.internal', 'hostname': 'que-api01', 'domain': 'WORKGROUP', 'version': '1.0.0', 'svc_start': '01-08-2025 17:01:28', 'svc_uptime': 3, 'install_group': 'default_group', 'forest': None, 'domain_joined': False, 'is_dc': False, 'family': 'Linux', 'release': '6.8.0-49-generic', 'sys_version': '#49~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Nov  6 17:42:15 UTC 2', 'machine': 'x86_64', 'processor': 'x86_64', 'cpu_count': 6, 'logical_cpu_count': 6, 'memory': '7.8G', 'last_boot': '12-25-2024 08:37:41', 'uptime': 1214631, 'local_addr': '192.168.4.142', 'install_type': 'Client', 'edition': 'Ubuntu 22.04.4 LTS', 'build': '6.8.0-49-generic'}
+2025-01-08 17:01:32,123 [INFO] [/register] AGENT_ID: d3e14bd56e3d428580c28b38da771255
+2025-01-08 17:01:32,270 [INFO] within has_valid_tenant_and_agent
+2025-01-08 17:01:32,286 [INFO] [/compliance] Entered post_compliance endpoint
+2025-01-08 17:01:35,828 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-08 17:01:35,913 [INFO] [/assets] Entered assets endpoint
+2025-01-08 17:03:54,747 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-08 17:03:54,787 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-08 17:03:55,964 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-08 17:03:56,048 [INFO] [/assets] Entered assets endpoint
+2025-01-08 17:12:15,241 [INFO] within has_valid_tenant_key
+2025-01-08 17:12:15,241 [INFO] [has_valid_tenant_key] TOKEN: ff89c9f387e747388999e4cb22943f90
+2025-01-08 17:12:15,264 [INFO] [has_valid_tenant_key] TENANT: <Tenant 1>
+2025-01-08 17:12:15,265 [INFO] [has_valid_tenant_key] Tenant is valid
+2025-01-08 17:12:15,265 [INFO] [/register] Entered register agent endpoint
+2025-01-08 17:12:15,266 [INFO] [/register] PAYLOAD: {'key': 'que-api01', 'token': 'ff89c9f387e747388999e4cb22943f90', 'version': '1.0.0', 'enabled': True, 'install_group': 'default', 'public_addr': '192.168.4.142', 'country_code': 'US', 'country_name': 'United States', 'region_name': 'California', 'city_name': 'San Francisco', 'lat': '37.7749', 'long': '-122.4194', 'uninstall': False, 'cpu_count': 6, 'logical_cpu_count': 6, 'memory': '8 GB', 'hostname': 'que-api01', 'fqdn': 'que-api01.quynn.internal', 'domain': None, 'forest': None, 'dn': None, 'site': None, 'domain_joined': False, 'is_dc': False, 'family': 'Linux', 'release': '6.8.0-49-generic', 'sys_version': '#49~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Nov  6 17:42:15 UTC 2', 'install_type': 'full', 'edition': 'Unknown', 'build': 'Unknown', 'machine': 'x86_64', 'local_addr': '192.168.4.142', 'processor': 'x86_64', 'last_boot': '2024-12-25 08:37:41', 'last_active': '2025-01-08 10:12:15', 'svc_start': '2024-12-25 08:37:41', 'svc_uptime': 1215274, 'uptime': 1215274}
+2025-01-08 17:13:06,320 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-08 17:13:06,518 [INFO] [/assets] Entered assets endpoint
+2025-01-08 17:14:18,771 [INFO] within has_valid_tenant_key
+2025-01-08 17:14:18,771 [INFO] [has_valid_tenant_key] TOKEN: ff89c9f387e747388999e4cb22943f90
+2025-01-08 17:14:18,912 [INFO] [has_valid_tenant_key] TENANT: None
+2025-01-08 17:14:18,912 [INFO] [has_valid_tenant_key] Invalid tenant token
+2025-01-08 17:14:37,126 [INFO] within has_valid_tenant_key
+2025-01-08 17:14:37,126 [INFO] [has_valid_tenant_key] TOKEN: d16757ade4c6489290a09749f469f1af
+2025-01-08 17:14:37,135 [INFO] [has_valid_tenant_key] TENANT: <Tenant 1>
+2025-01-08 17:14:37,135 [INFO] [has_valid_tenant_key] Tenant is valid
+2025-01-08 17:14:37,135 [INFO] [/register] Entered register agent endpoint
+2025-01-08 17:14:37,136 [INFO] [/register] PAYLOAD: {'key': 'que-api01', 'token': 'd16757ade4c6489290a09749f469f1af', 'version': '1.0.0', 'enabled': True, 'install_group': 'default', 'public_addr': '192.168.4.142', 'country_code': 'US', 'country_name': 'United States', 'region_name': 'California', 'city_name': 'San Francisco', 'lat': '37.7749', 'long': '-122.4194', 'uninstall': False, 'cpu_count': 6, 'logical_cpu_count': 6, 'memory': '8 GB', 'hostname': 'que-api01', 'fqdn': 'que-api01.quynn.internal', 'domain': None, 'forest': None, 'dn': None, 'site': None, 'domain_joined': False, 'is_dc': False, 'family': 'Linux', 'release': '6.8.0-49-generic', 'sys_version': '#49~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Nov  6 17:42:15 UTC 2', 'install_type': 'full', 'edition': 'Unknown', 'build': 'Unknown', 'machine': 'x86_64', 'local_addr': '192.168.4.142', 'processor': 'x86_64', 'last_boot': '2024-12-25 08:37:41', 'last_active': '2025-01-08 10:14:37', 'svc_start': '2024-12-25 08:37:41', 'svc_uptime': 1215416, 'uptime': 1215416}
+2025-01-08 17:14:37,187 [INFO] [/register] AGENT_ID: a9fc06c830c0421db67cbe01d24345fc
+2025-01-08 17:14:40,554 [INFO] [/assets] Entered assets endpoint
+2025-01-08 17:14:40,597 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-08 17:16:58,474 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-08 17:16:58,536 [INFO] [/assets] Entered assets endpoint
+2025-01-08 17:17:03,280 [INFO] [/assets] Entered assets endpoint
+2025-01-08 17:19:16,600 [INFO] [/assets] Entered assets endpoint
+2025-01-08 17:19:18,191 [INFO] [/assets] Entered assets endpoint
+2025-01-08 17:28:30,350 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-08 17:28:30,369 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-08 17:28:38,495 [INFO] within has_valid_tenant_and_agent
+2025-01-08 17:28:41,536 [INFO] within has_valid_tenant_key
+2025-01-08 17:28:41,537 [INFO] [has_valid_tenant_key] TOKEN: ef554aa611f342a0813d1d77e4a9c010
+2025-01-08 17:28:41,543 [INFO] [has_valid_tenant_key] TENANT: <Tenant 1>
+2025-01-08 17:28:41,543 [INFO] [has_valid_tenant_key] Tenant is valid
+2025-01-08 17:28:41,544 [INFO] [/register] Entered register agent endpoint
+2025-01-08 17:28:41,544 [INFO] [/register] Agent key found in headers: d3e14bd56e3d428580c28b38da771255
+2025-01-08 17:28:41,554 [INFO] [/register] PAYLOAD: {'fqdn': 'que-api01.quynn.internal', 'hostname': 'que-api01', 'domain': 'WORKGROUP', 'version': '1.0.0', 'svc_start': '01-08-2025 17:28:38', 'svc_uptime': 3, 'install_group': 'default_group', 'forest': None, 'domain_joined': False, 'is_dc': False, 'family': 'Linux', 'release': '6.8.0-49-generic', 'sys_version': '#49~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Nov  6 17:42:15 UTC 2', 'machine': 'x86_64', 'processor': 'x86_64', 'cpu_count': 6, 'logical_cpu_count': 6, 'memory': '7.8G', 'last_boot': '12-25-2024 08:37:41', 'uptime': 1216260, 'local_addr': '192.168.4.142', 'install_type': 'Client', 'edition': 'Ubuntu 22.04.4 LTS', 'build': '6.8.0-49-generic'}
+2025-01-08 17:28:41,608 [INFO] [/register] AGENT_ID: 68522bff0392440aad9e5a74e978edc8
+2025-01-08 17:28:41,752 [INFO] within has_valid_tenant_and_agent
+2025-01-08 17:28:41,767 [INFO] [/compliance] Entered post_compliance endpoint
+2025-01-08 17:28:42,795 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-08 17:28:42,861 [INFO] [/assets] Entered assets endpoint
+2025-01-08 17:29:11,814 [INFO] within has_valid_tenant_and_agent
+2025-01-08 17:29:11,829 [INFO] [/compliance] Entered post_compliance endpoint
+2025-01-08 17:29:24,706 [INFO] [/assets] Entered assets endpoint
+2025-01-08 17:29:24,732 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
