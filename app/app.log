@@ -1,0 +1,33 @@
+2025-01-08 02:33:15,983 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-08 02:33:16,004 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-08 02:36:04,578 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-08 02:36:04,598 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-08 02:36:10,850 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-08 02:36:10,871 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-08 02:43:27,841 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-08 02:43:27,863 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-08 02:43:33,333 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-08 02:43:33,354 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-08 02:44:54,512 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-08 02:44:54,552 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-08 02:50:01,177 [INFO] [/register] Entered register agent endpoint
+2025-01-08 02:50:01,177 [INFO] [/register] Agent key found in headers: e71a4fcac0ac4e73aabf1fce818efb22
+2025-01-08 02:50:01,189 [INFO] [/register] PAYLOAD: {'fqdn': 'que-api01.quynn.internal', 'hostname': 'que-api01', 'domain': 'WORKGROUP', 'version': '1.0.0', 'svc_start': '01-08-2025 02:49:58', 'svc_uptime': 3, 'install_group': 'default_group', 'forest': None, 'domain_joined': False, 'is_dc': False, 'family': 'Linux', 'release': '6.8.0-49-generic', 'sys_version': '#49~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Nov  6 17:42:15 UTC 2', 'machine': 'x86_64', 'processor': 'x86_64', 'cpu_count': 6, 'logical_cpu_count': 6, 'memory': '7.8G', 'last_boot': '12-25-2024 08:37:41', 'uptime': 1163540, 'local_addr': '192.168.4.142', 'install_type': 'Client', 'edition': 'Ubuntu 22.04.4 LTS', 'build': '6.8.0-49-generic'}
+2025-01-08 02:50:01,274 [INFO] [/register] AGENT_ID: f943cdf1fa1c4df396efa348e0186019
+2025-01-08 02:50:01,504 [INFO] [/compliance] Entered post_compliance endpoint
+2025-01-08 02:50:31,615 [INFO] [/compliance] Entered post_compliance endpoint
+2025-01-08 02:51:01,685 [INFO] [/compliance] Entered post_compliance endpoint
+2025-01-08 02:51:02,230 [INFO] [/collection] Entered data_collection endpoint
+2025-01-08 02:51:02,368 [INFO] [/collection] Entered data_collection endpoint
+2025-01-08 02:51:50,999 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-08 02:51:51,090 [INFO] [/assets] Entered assets endpoint
+2025-01-08 02:54:05,328 [INFO] [/register] Entered register agent endpoint
+2025-01-08 02:54:05,330 [INFO] [/register] PAYLOAD: {'key': 'agent-123', 'token': 'test', 'version': '1.0.0', 'enabled': True, 'install_group': 'default', 'public_addr': '192.168.1.100', 'country_code': 'US', 'country_name': 'United States', 'region_name': 'California', 'city_name': 'San Francisco', 'lat': '37.7749', 'long': '-122.4194', 'uninstall': False, 'cpu_count': 4, 'logical_cpu_count': 4, 'memory': '16 GB', 'hostname': 'agent-123', 'fqdn': 'agent-123.local', 'domain': 'local', 'forest': 'local', 'dn': 'CN=agent-123,OU=Computers,DC=local', 'site': 'default', 'domain_joined': True, 'is_dc': False, 'family': 'Windows', 'release': '10', 'sys_version': '10.0.19042', 'install_type': 'full', 'edition': 'Pro', 'build': '19042', 'machine': 'x64', 'local_addr': '192.168.1.100', 'processor': 'Intel Core i7', 'last_boot': '2022-01-01 12:00:00', 'last_active': '2022-01-01 12:00:00', 'svc_start': '2022-01-01 12:00:00', 'svc_uptime': '3600', 'uptime': '3600'}
+2025-01-08 02:54:05,374 [INFO] [/register] AGENT_ID: 51bb7ded7a7446208d3c003e80e02340
+2025-01-08 02:54:14,864 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-08 02:54:14,939 [INFO] [/assets] Entered assets endpoint
+2025-01-08 02:54:31,148 [INFO] [/groups] Entered groups endpoint
+2025-01-08 02:54:32,601 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-08 02:54:32,670 [INFO] [/assets] Entered assets endpoint
+2025-01-08 02:54:34,787 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-08 02:54:34,810 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint

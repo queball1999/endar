@@ -4,7 +4,10 @@ from app.models import *
 from app import db
 from flask_login import current_user, login_user
 
+from app.logging import logger
+
 def validate_token_in_header(enc_token):
+    logger.info("within validate_token_in_header")
     user = User.verify_auth_token(enc_token)
     if not user: # invalid token
         return False
@@ -15,16 +18,26 @@ def validate_token_in_header(enc_token):
 def has_valid_tenant_key(f):
     @wraps(f)
     def decorated_function(*args, **kws):
+        logger.info("within has_valid_tenant_key")
+
         token = request.headers.get("tenant-key")
+        logger.info("[has_valid_tenant_key] TOKEN: {}".format(token))
+        
         tenant = Tenant.query.filter(Tenant.token == token).first()
+        logger.info("[has_valid_tenant_key] TENANT: {}".format(tenant))
+
         if not tenant:
+            logger.info("[has_valid_tenant_key] Invalid tenant token")
             return jsonify({"registered":False,"msg":"invalid tenant token"}),424
+        
+        logger.info("[has_valid_tenant_key] Tenant is valid")
         return f(tenant, *args, **kws)
     return decorated_function
 
 def has_valid_tenant_and_agent(f):
     @wraps(f)
     def decorated_function(*args, **kws):
+        logger.info("within has_valid_tenant_and_agent")
         token = request.headers.get("tenant-key")
         tenant = Tenant.query.filter(Tenant.token == token).first()
         if not tenant:
@@ -60,6 +73,7 @@ def roles_accepted(*role_names):
 
         @wraps(view_function)    # Tells debuggers that is is a function wrapper
         def decorator(*args, **kwargs):
+            logger.info("within roles_accepted")
             from flask_login import current_user
 
             #// Try to authenticate with an token (API login, must have token in HTTP header)
@@ -110,6 +124,7 @@ def roles_required(*role_names):
 
         @wraps(view_function)    # Tells debuggers that is is a function wrapper
         def decorator(*args, **kwargs):
+            logger.info("within roles_required")
             from flask_login import current_user
 
             #// Try to authenticate with an token (API login, must have token in HTTP header)
