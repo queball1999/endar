@@ -60,5 +60,8 @@ tmp
 !/code-server/scripts/
 
 # Log Files
-/app/*.log
-app/app.log
+*/*.log
+
+# Go Mod Files
+*/*.mod
+*/*.sum

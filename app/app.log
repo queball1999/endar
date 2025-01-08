@@ -121,3 +121,62 @@
 2025-01-08 17:29:11,829 [INFO] [/compliance] Entered post_compliance endpoint
 2025-01-08 17:29:24,706 [INFO] [/assets] Entered assets endpoint
 2025-01-08 17:29:24,732 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-08 19:42:36,232 [INFO] within has_valid_tenant_key
+2025-01-08 19:42:36,233 [INFO] [has_valid_tenant_key] TOKEN: None
+2025-01-08 19:42:36,259 [INFO] [has_valid_tenant_key] TENANT: None
+2025-01-08 19:42:36,259 [INFO] [has_valid_tenant_key] Invalid tenant token
+2025-01-08 19:43:06,632 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-08 19:43:06,653 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-08 19:43:09,110 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-08 19:43:09,134 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-08 19:43:10,183 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-08 19:43:10,250 [INFO] [/assets] Entered assets endpoint
+2025-01-08 20:07:18,845 [INFO] within has_valid_tenant_key
+2025-01-08 20:07:18,846 [INFO] [has_valid_tenant_key] TOKEN: None
+2025-01-08 20:07:18,882 [INFO] [has_valid_tenant_key] TENANT: None
+2025-01-08 20:07:18,882 [INFO] [has_valid_tenant_key] Invalid tenant token
+2025-01-08 20:14:04,251 [INFO] within has_valid_tenant_key
+2025-01-08 20:14:04,251 [INFO] [has_valid_tenant_key] TOKEN: None
+2025-01-08 20:14:04,272 [INFO] [has_valid_tenant_key] TENANT: None
+2025-01-08 20:14:04,272 [INFO] [has_valid_tenant_key] Invalid tenant token
+2025-01-08 20:17:38,548 [INFO] within has_valid_tenant_key
+2025-01-08 20:17:38,549 [INFO] [has_valid_tenant_key] TOKEN: None
+2025-01-08 20:17:38,573 [INFO] [has_valid_tenant_key] TENANT: None
+2025-01-08 20:17:38,574 [INFO] [has_valid_tenant_key] Invalid tenant token
+2025-01-08 20:17:50,344 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-08 20:17:50,364 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-08 20:18:12,350 [INFO] within has_valid_tenant_key
+2025-01-08 20:18:12,351 [INFO] [has_valid_tenant_key] TOKEN: None
+2025-01-08 20:18:12,358 [INFO] [has_valid_tenant_key] TENANT: None
+2025-01-08 20:18:12,359 [INFO] [has_valid_tenant_key] Invalid tenant token
+2025-01-08 20:18:30,268 [INFO] within has_valid_tenant_key
+2025-01-08 20:18:30,268 [INFO] [has_valid_tenant_key] TOKEN: None
+2025-01-08 20:18:30,275 [INFO] [has_valid_tenant_key] TENANT: None
+2025-01-08 20:18:30,276 [INFO] [has_valid_tenant_key] Invalid tenant token
+2025-01-08 20:21:20,233 [INFO] within has_valid_tenant_key
+2025-01-08 20:21:20,234 [INFO] [has_valid_tenant_key] TOKEN: None
+2025-01-08 20:21:20,502 [INFO] [has_valid_tenant_key] TENANT: None
+2025-01-08 20:21:20,502 [INFO] [has_valid_tenant_key] Invalid tenant token
+2025-01-08 20:21:25,671 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-08 20:21:25,705 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-08 20:21:36,815 [INFO] within has_valid_tenant_key
+2025-01-08 20:21:36,816 [INFO] [has_valid_tenant_key] TOKEN: None
+2025-01-08 20:21:36,830 [INFO] [has_valid_tenant_key] TENANT: None
+2025-01-08 20:21:36,830 [INFO] [has_valid_tenant_key] Invalid tenant token
+2025-01-08 20:22:25,117 [INFO] within has_valid_tenant_key
+2025-01-08 20:22:25,118 [INFO] [has_valid_tenant_key] TOKEN: None
+2025-01-08 20:22:25,138 [INFO] [has_valid_tenant_key] TENANT: None
+2025-01-08 20:22:25,139 [INFO] [has_valid_tenant_key] Invalid tenant token
+2025-01-08 20:23:25,226 [INFO] within has_valid_tenant_key
+2025-01-08 20:23:25,227 [INFO] [has_valid_tenant_key] TOKEN: None
+2025-01-08 20:23:25,249 [INFO] [has_valid_tenant_key] TENANT: None
+2025-01-08 20:23:25,249 [INFO] [has_valid_tenant_key] Invalid tenant token
+2025-01-08 20:24:05,855 [INFO] within has_valid_tenant_key
+2025-01-08 20:24:05,856 [INFO] [has_valid_tenant_key] TOKEN: b9c4a6958a9144da8594adf3635b8593
+2025-01-08 20:24:05,878 [INFO] [has_valid_tenant_key] TENANT: <Tenant 1>
+2025-01-08 20:24:05,879 [INFO] [has_valid_tenant_key] Tenant is valid
+2025-01-08 20:24:05,880 [INFO] [/register] Entered register agent endpoint
+2025-01-08 20:24:05,882 [INFO] [/register] PAYLOAD: {'key': 'que-api01', 'token': 'b9c4a6958a9144da8594adf3635b8593', 'version': '1.0.0', 'enabled': True, 'install_group': 'Default Group', 'public_addr': '127.0.0.1/8', 'uninstall': False, 'cpu_count': 6, 'logical_cpu_count': 6, 'memory': '7.75 GB', 'hostname': 'que-api01', 'fqdn': 'que-api01', 'family': 'linux', 'release': 'ubuntu', 'sys_version': '22.04', 'install_type': 'Client', 'edition': 'Unknown', 'build': '6.8.0-49-generic', 'machine': 'debian', 'processor': 'QEMU Virtual CPU version 2.5+', 'last_boot': '2024-12-25 08:37:41', 'uptime': 1226784}
+2025-01-08 20:24:05,953 [INFO] [/register] AGENT_ID: 1d4a9faa06d6442698f744566f1c2743
+2025-01-08 20:24:13,316 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-08 20:24:13,388 [INFO] [/assets] Entered assets endpoint
