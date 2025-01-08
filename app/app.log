@@ -180,3 +180,100 @@
 2025-01-08 20:24:05,953 [INFO] [/register] AGENT_ID: 1d4a9faa06d6442698f744566f1c2743
 2025-01-08 20:24:13,316 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
 2025-01-08 20:24:13,388 [INFO] [/assets] Entered assets endpoint
+2025-01-08 21:53:19,636 [INFO] within has_valid_tenant_key
+2025-01-08 21:53:19,637 [INFO] [has_valid_tenant_key] TOKEN: 231513977e0a49c5a1f5c3374d27ae6f
+2025-01-08 21:53:19,673 [INFO] [has_valid_tenant_key] TENANT: None
+2025-01-08 21:53:19,674 [INFO] [has_valid_tenant_key] Invalid tenant token
+2025-01-08 22:02:27,757 [INFO] within has_valid_tenant_key
+2025-01-08 22:02:27,758 [INFO] [has_valid_tenant_key] TOKEN: 231513977e0a49c5a1f5c3374d27ae6f
+2025-01-08 22:02:27,788 [INFO] [has_valid_tenant_key] TENANT: None
+2025-01-08 22:02:27,789 [INFO] [has_valid_tenant_key] Invalid tenant token
+2025-01-08 22:02:56,427 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-08 22:02:56,514 [INFO] [/assets] Entered assets endpoint
+2025-01-08 22:02:59,652 [INFO] within has_valid_tenant_key
+2025-01-08 22:02:59,652 [INFO] [has_valid_tenant_key] TOKEN: b9c4a6958a9144da8594adf3635b8593
+2025-01-08 22:02:59,662 [INFO] [has_valid_tenant_key] TENANT: <Tenant 1>
+2025-01-08 22:02:59,662 [INFO] [has_valid_tenant_key] Tenant is valid
+2025-01-08 22:02:59,663 [INFO] [/register] Entered register agent endpoint
+2025-01-08 22:02:59,664 [INFO] [/register] PAYLOAD: {'key': 'que-api01', 'token': 'b9c4a6958a9144da8594adf3635b8593', 'version': '1.0.0', 'enabled': True, 'install_group': 'Default Group', 'public_addr': '127.0.0.1/8', 'uninstall': False, 'cpu_count': 6, 'logical_cpu_count': 6, 'memory': '7.75 GB', 'hostname': 'que-api01', 'fqdn': 'que-api01', 'family': 'linux', 'release': 'ubuntu', 'sys_version': '22.04', 'install_type': 'Client', 'edition': 'Unknown', 'build': '6.8.0-49-generic', 'machine': 'debian', 'processor': 'QEMU Virtual CPU version 2.5+', 'last_boot': '2024-12-25 08:37:41', 'uptime': 1232718}
+2025-01-08 22:04:09,118 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-08 22:04:09,136 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-08 22:04:18,337 [INFO] within has_valid_tenant_key
+2025-01-08 22:04:18,337 [INFO] [has_valid_tenant_key] TOKEN: dddd73d05a5b443d8be5f34ea176b375
+2025-01-08 22:04:18,353 [INFO] [has_valid_tenant_key] TENANT: <Tenant 1>
+2025-01-08 22:04:18,354 [INFO] [has_valid_tenant_key] Tenant is valid
+2025-01-08 22:04:18,354 [INFO] [/register] Entered register agent endpoint
+2025-01-08 22:04:18,355 [INFO] [/register] PAYLOAD: {'key': 'que-api01', 'token': 'dddd73d05a5b443d8be5f34ea176b375', 'version': '1.0.0', 'enabled': True, 'install_group': 'Default Group', 'public_addr': '127.0.0.1/8', 'uninstall': False, 'cpu_count': 6, 'logical_cpu_count': 6, 'memory': '7.75 GB', 'hostname': 'que-api01', 'fqdn': 'que-api01', 'family': 'linux', 'release': 'ubuntu', 'sys_version': '22.04', 'install_type': 'Client', 'edition': 'Unknown', 'build': '6.8.0-49-generic', 'machine': 'debian', 'processor': 'QEMU Virtual CPU version 2.5+', 'last_boot': '2024-12-25 08:37:41', 'uptime': 1232797}
+2025-01-08 22:04:18,420 [INFO] [/register] AGENT_ID: 01c19e2da7ed492da842bb17978c6ecd
+2025-01-08 22:04:22,677 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-08 22:04:22,749 [INFO] [/assets] Entered assets endpoint
+2025-01-08 22:17:44,797 [INFO] within has_valid_tenant_key
+2025-01-08 22:17:44,798 [INFO] [has_valid_tenant_key] TOKEN: dddd73d05a5b443d8be5f34ea176b375
+2025-01-08 22:17:45,005 [INFO] [has_valid_tenant_key] TENANT: None
+2025-01-08 22:17:45,006 [INFO] [has_valid_tenant_key] Invalid tenant token
+2025-01-08 22:18:05,669 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-08 22:18:05,747 [INFO] [/assets] Entered assets endpoint
+2025-01-08 22:18:19,666 [INFO] within has_valid_tenant_key
+2025-01-08 22:18:19,667 [INFO] [has_valid_tenant_key] TOKEN: 1b2038b4ab87468d868346904a441f56
+2025-01-08 22:18:19,681 [INFO] [has_valid_tenant_key] TENANT: <Tenant 1>
+2025-01-08 22:18:19,682 [INFO] [has_valid_tenant_key] Tenant is valid
+2025-01-08 22:18:19,682 [INFO] [/register] Entered register agent endpoint
+2025-01-08 22:18:19,683 [INFO] [/register] PAYLOAD: {'key': 'que-api01', 'token': '1b2038b4ab87468d868346904a441f56', 'version': '1.0.0', 'enabled': True, 'install_group': 'Default Group', 'public_addr': '127.0.0.1/8', 'uninstall': False, 'cpu_count': 6, 'logical_cpu_count': 6, 'memory': '7.75 GB', 'hostname': 'que-api01', 'fqdn': 'que-api01', 'family': 'linux', 'release': 'ubuntu', 'sys_version': '22.04', 'install_type': 'Client', 'edition': 'Unknown', 'build': '6.8.0-49-generic', 'machine': 'debian', 'processor': 'QEMU Virtual CPU version 2.5+', 'last_boot': '2024-12-25 08:37:41', 'uptime': 1233638}
+2025-01-08 22:18:19,739 [INFO] [/register] AGENT_ID: c48cbdfeb7c9432e9209702eedeb437c
+2025-01-08 22:18:34,299 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-08 22:18:34,327 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-08 22:22:12,566 [INFO] within has_valid_tenant_key
+2025-01-08 22:22:12,567 [INFO] [has_valid_tenant_key] TOKEN: 1b2038b4ab87468d868346904a441f56
+2025-01-08 22:22:12,615 [INFO] [has_valid_tenant_key] TENANT: <Tenant 1>
+2025-01-08 22:22:12,616 [INFO] [has_valid_tenant_key] Tenant is valid
+2025-01-08 22:22:12,617 [INFO] [/register] Entered register agent endpoint
+2025-01-08 22:22:12,619 [INFO] [/register] PAYLOAD: {'key': 'que-api01', 'token': '1b2038b4ab87468d868346904a441f56', 'version': '1.0.0', 'enabled': True, 'install_group': 'Default Group', 'public_addr': '127.0.0.1/8', 'uninstall': False, 'cpu_count': 6, 'logical_cpu_count': 6, 'memory': '7.75 GB', 'hostname': 'que-api01', 'fqdn': 'que-api01', 'family': 'linux', 'release': 'ubuntu', 'sys_version': '22.04', 'install_type': 'Client', 'edition': 'Unknown', 'build': '6.8.0-49-generic', 'machine': 'debian', 'processor': 'QEMU Virtual CPU version 2.5+', 'last_boot': '2024-12-25 08:37:41', 'uptime': 1233871}
+2025-01-08 22:23:36,970 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-08 22:23:36,989 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-08 22:23:48,841 [INFO] within has_valid_tenant_key
+2025-01-08 22:23:48,841 [INFO] [has_valid_tenant_key] TOKEN: 1b2038b4ab87468d868346904a441f56
+2025-01-08 22:23:48,863 [INFO] [has_valid_tenant_key] TENANT: None
+2025-01-08 22:23:48,863 [INFO] [has_valid_tenant_key] Invalid tenant token
+2025-01-08 22:24:00,738 [INFO] within has_valid_tenant_key
+2025-01-08 22:24:00,739 [INFO] [has_valid_tenant_key] TOKEN: 1b2038b4ab87468d868346904a441f56
+2025-01-08 22:24:00,749 [INFO] [has_valid_tenant_key] TENANT: None
+2025-01-08 22:24:00,749 [INFO] [has_valid_tenant_key] Invalid tenant token
+2025-01-08 22:24:18,947 [INFO] within has_valid_tenant_key
+2025-01-08 22:24:18,947 [INFO] [has_valid_tenant_key] TOKEN: 09cd1ea41332419185e10398a48b594a
+2025-01-08 22:24:18,956 [INFO] [has_valid_tenant_key] TENANT: <Tenant 1>
+2025-01-08 22:24:18,957 [INFO] [has_valid_tenant_key] Tenant is valid
+2025-01-08 22:24:18,957 [INFO] [/register] Entered register agent endpoint
+2025-01-08 22:24:18,958 [INFO] [/register] PAYLOAD: {'key': 'que-api01', 'token': '09cd1ea41332419185e10398a48b594a', 'version': '1.0.0', 'enabled': True, 'install_group': 'Default Group', 'public_addr': '127.0.0.1/8', 'uninstall': False, 'cpu_count': 6, 'logical_cpu_count': 6, 'memory': '7.75 GB', 'hostname': 'que-api01', 'fqdn': 'que-api01', 'family': 'linux', 'release': 'ubuntu', 'sys_version': '22.04', 'install_type': 'Client', 'edition': 'Unknown', 'build': '6.8.0-49-generic', 'machine': 'debian', 'processor': 'QEMU Virtual CPU version 2.5+', 'last_boot': '2024-12-25 08:37:41', 'uptime': 1233997}
+2025-01-08 22:24:19,015 [INFO] [/register] AGENT_ID: 5cbf428191544d13b4fd69bc6aaf0039
+2025-01-08 22:25:22,890 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-08 22:25:22,908 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-08 22:26:20,377 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-08 22:26:20,439 [INFO] [/assets] Entered assets endpoint
+2025-01-08 22:28:59,563 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-08 22:28:59,582 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-08 22:29:07,393 [INFO] within has_valid_tenant_key
+2025-01-08 22:29:07,394 [INFO] [has_valid_tenant_key] TOKEN: 7c7e5adec49848b88faba7ce15456eeb
+2025-01-08 22:29:07,401 [INFO] [has_valid_tenant_key] TENANT: <Tenant 1>
+2025-01-08 22:29:07,402 [INFO] [has_valid_tenant_key] Tenant is valid
+2025-01-08 22:29:07,402 [INFO] [/register] Entered register agent endpoint
+2025-01-08 22:29:07,403 [INFO] [/register] PAYLOAD: {'key': 'que-api01', 'token': '7c7e5adec49848b88faba7ce15456eeb', 'version': '1.0.0', 'enabled': True, 'install_group': 'Default Group', 'public_addr': '127.0.0.1/8', 'uninstall': False, 'cpu_count': 6, 'logical_cpu_count': 6, 'memory': '7.75 GB', 'hostname': 'que-api01', 'fqdn': 'que-api01', 'family': 'linux', 'release': 'ubuntu', 'sys_version': '22.04', 'install_type': 'Client', 'edition': 'Unknown', 'build': '6.8.0-49-generic', 'machine': 'debian', 'processor': 'QEMU Virtual CPU version 2.5+', 'last_boot': '2024-12-25 08:37:41', 'uptime': 1234286}
+2025-01-08 22:29:07,451 [INFO] [/register] AGENT_ID: 69506daf53aa4779bb0a8795d0e62d66
+2025-01-08 22:38:31,520 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-08 22:38:31,593 [INFO] [/assets] Entered assets endpoint
+2025-01-08 22:38:37,746 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-08 22:38:37,786 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-08 22:39:51,906 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-08 22:39:51,971 [INFO] [/assets] Entered assets endpoint
+2025-01-08 22:39:53,547 [INFO] [/assets] Entered assets endpoint
+2025-01-08 22:42:17,446 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-08 22:42:17,517 [INFO] [/assets] Entered assets endpoint
+2025-01-08 22:42:18,777 [INFO] [/assets] Entered assets endpoint
+2025-01-08 22:45:43,822 [INFO] within has_valid_tenant_key
+2025-01-08 22:45:43,823 [INFO] [has_valid_tenant_key] TOKEN: 3ba8705fd0fc46babcf6ae9c7bb20126
+2025-01-08 22:45:43,855 [INFO] [has_valid_tenant_key] TENANT: <Tenant 1>
+2025-01-08 22:45:43,856 [INFO] [has_valid_tenant_key] Tenant is valid
+2025-01-08 22:45:43,857 [INFO] [/register] Entered register agent endpoint
+2025-01-08 22:45:43,860 [INFO] [/register] PAYLOAD: {'key': 'que-api01', 'token': '3ba8705fd0fc46babcf6ae9c7bb20126', 'version': '1.0.0', 'enabled': True, 'install_group': 'Default Group', 'public_addr': '127.0.0.1/8', 'uninstall': False, 'cpu_count': 6, 'logical_cpu_count': 6, 'memory': '7.75 GB', 'hostname': 'que-api01', 'fqdn': 'que-api01', 'family': 'linux', 'release': 'ubuntu', 'sys_version': '22.04', 'install_type': 'Client', 'edition': 'Unknown', 'build': '6.8.0-49-generic', 'machine': 'debian', 'processor': 'QEMU Virtual CPU version 2.5+', 'last_boot': '2024-12-25 08:37:41', 'uptime': 1235282}
+2025-01-08 22:45:43,939 [INFO] [/register] AGENT_ID: 8ac56f04b13c4919b2b513d7010a4832
+2025-01-08 22:46:44,612 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-08 22:46:44,693 [INFO] [/assets] Entered assets endpoint

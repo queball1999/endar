@@ -61,7 +61,14 @@ tmp
 
 # Log Files
 */*.log
+app/app.log
 
 # Go Mod Files
 */*.mod
 */*.sum
+
+# Agent INI File
+agent/config.ini
+
+# Binary
+agent/endar-agent
