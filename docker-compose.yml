@@ -45,27 +45,31 @@ services:
   code_server:
     container_name: code_server
     image: codercom/code-server:latest
-    user: "1000:1000"
+    user: coder
     networks:
       - web_nw
     ports:
       - "8443:8080"
     environment:
-      - PASSWORD=${DEFAULT_PASSWORD:-admin}  # Same credentials as Endar server
+      - SHELL=/home/coder/restricted_shell.sh
+      - HASHED_PASSWORD=${DEFAULT_PASSWORD_HASH} # Hashed version of password
       - GIT_AUTHOR_NAME=Endar
       - GIT_AUTHOR_EMAIL=admin@example.com
     working_dir: /home/coder/scripts  # Set the working directory
     volumes:
       - ./code-server:/home/coder/.local/share/code-server:rw
-      - ./code-server/scripts:/home/coder/scripts:rw  # Mount scripts directory
+      - ./code-server/scripts:/home/coder/scripts:rw
       - ./code-server/.config:/home/coder/.config:rw
       - ./code-server/.cache:/home/coder/.cache:rw
+      - ./code-server/restricted_shell.sh:/home/coder/restricted_shell.sh:ro
     read_only: true
     tmpfs:
       - /tmp  # Allow temporary storage for system functions
     security_opt:
       - no-new-privileges:true  # Prevent privilege escalation
-    command: code-server --disable-telemetry --disable-getting-started-override --disable-file-downloads --cert --user-data-dir=/home/coder/scripts
+    cap_drop:
+      - ALL  # Drop all capabilities
+    command: code-server --disable-telemetry --disable-getting-started-override --disable-file-downloads
     restart: unless-stopped
     labels:
       - "traefik.enable=true"

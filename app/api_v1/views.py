@@ -10,13 +10,17 @@ from itertools import groupby
 import arrow
 import json
 
+from app.logging import logger
+
 @api.route('/health', methods=['GET'])
 def get_health():
+    logger.info("[/health] Entered health endpoint")
     return jsonify({"message":"ok"})
 
 @api.route('/assets', methods=['GET','POST'])
 @login_required
 def assets():
+    logger.info("[/assets] Entered assets endpoint")
     """
     return query results for dt table
     """
@@ -37,6 +41,7 @@ def assets():
 @api.route('/groups', methods=['GET','POST'])
 @login_required
 def groups():
+    logger.info("[/groups] Entered groups endpoint")
     """
     return query results for dt table
     """
@@ -55,6 +60,7 @@ def groups():
 @api.route('/stats/agent-summary', methods=['GET'])
 @login_required
 def get_agent_stats():
+    logger.info("[/stats/agent-summary] Entered get_agent_stats endpoint")
     tenant_id = request.args.get("tenant-id", None)
     data = {
         "total_agents":models.Agent._query(as_count=True,tenant_id=tenant_id),
@@ -70,6 +76,7 @@ def get_agent_stats():
 @api.route('/graph/agent-registered', methods=['GET'])
 @login_required
 def graph_get_agent_registered():
+    logger.info("[/graph/agent-registered] Entered graph_get_agent_registered endpoint")
     data = {}
     end_date = datetime.utcnow()
     start_date = end_date - timedelta(days=60)
@@ -91,6 +98,7 @@ def graph_get_agent_registered():
 @api.route('/graph/agent-active', methods=['GET'])
 @login_required
 def graph_get_agent_active():
+    logger.info("[/graph/agent-active] Entered graph_get_agent_active endpoint")
     data = {}
     end_date = datetime.utcnow()
     start_date = end_date - timedelta(days=60)
@@ -112,6 +120,7 @@ def graph_get_agent_active():
 @api.route('/assets/<string:agent_key>', methods=['GET'])
 @login_required
 def get_asset(agent_key):
+    logger.info(f"[/assets/{agent_key}] Entered get_asset endpoint")
     data = Agent._query(key=agent_key,as_json=True)
     if not data:
         return jsonify({})
