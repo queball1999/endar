@@ -277,3 +277,64 @@
 2025-01-08 22:45:43,939 [INFO] [/register] AGENT_ID: 8ac56f04b13c4919b2b513d7010a4832
 2025-01-08 22:46:44,612 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
 2025-01-08 22:46:44,693 [INFO] [/assets] Entered assets endpoint
+2025-01-09 02:53:51,828 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-09 02:53:51,847 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-09 02:54:01,406 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-09 02:54:01,478 [INFO] [/assets] Entered assets endpoint
+2025-01-09 02:55:30,176 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-09 02:55:30,196 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-09 02:55:51,923 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-09 02:55:51,983 [INFO] [/assets] Entered assets endpoint
+2025-01-09 02:55:54,433 [INFO] [/groups] Entered groups endpoint
+2025-01-09 02:56:34,195 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-09 02:56:34,212 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-09 03:20:38,105 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-09 03:20:38,189 [INFO] [/assets] Entered assets endpoint
+2025-01-09 03:23:09,482 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-09 03:23:09,499 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-09 03:24:27,836 [INFO] [/groups] Entered groups endpoint
+2025-01-09 03:24:28,904 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-09 03:24:29,112 [INFO] [/assets] Entered assets endpoint
+2025-01-09 03:24:31,068 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-09 03:24:31,097 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-09 03:24:39,635 [INFO] within roles_required
+2025-01-09 03:24:44,526 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-09 03:24:44,544 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-09 15:48:15,966 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-09 15:48:15,984 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-09 15:48:18,013 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-09 15:48:18,086 [INFO] [/assets] Entered assets endpoint
+2025-01-09 15:49:29,818 [INFO] within has_valid_tenant_key
+2025-01-09 15:49:29,819 [INFO] [has_valid_tenant_key] TOKEN: 102166054d7d4bc788186fb98242deaf
+2025-01-09 15:49:29,841 [INFO] [has_valid_tenant_key] TENANT: <Tenant 1>
+2025-01-09 15:49:29,842 [INFO] [has_valid_tenant_key] Tenant is valid
+2025-01-09 15:49:29,842 [INFO] [/register] Entered register agent endpoint
+2025-01-09 15:49:29,844 [INFO] [/register] PAYLOAD: {'key': 'que-api01', 'token': '102166054d7d4bc788186fb98242deaf', 'version': '1.0.0', 'enabled': True, 'install_group': 'Default Group', 'public_addr': '127.0.0.1/8', 'uninstall': False, 'cpu_count': 6, 'logical_cpu_count': 6, 'memory': '7.75 GB', 'hostname': 'que-api01', 'fqdn': 'que-api01', 'family': 'linux', 'release': 'ubuntu', 'sys_version': '22.04', 'install_type': 'Client', 'edition': 'Unknown', 'build': '6.8.0-49-generic', 'machine': 'debian', 'processor': 'QEMU Virtual CPU version 2.5+', 'last_boot': '2024-12-25 08:37:41', 'uptime': 1296708}
+2025-01-09 15:49:29,902 [INFO] [/register] AGENT_ID: 11edb6c4428941ccac4776fbbd839d6e
+2025-01-09 15:49:34,945 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-09 15:49:35,016 [INFO] [/assets] Entered assets endpoint
+2025-01-09 15:49:58,667 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-09 15:49:58,738 [INFO] [/assets] Entered assets endpoint
+2025-01-09 15:50:01,838 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-09 15:50:01,868 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-09 15:50:11,536 [INFO] within has_valid_tenant_key
+2025-01-09 15:50:11,536 [INFO] [has_valid_tenant_key] TOKEN: 102166054d7d4bc788186fb98242deaf
+2025-01-09 15:50:11,544 [INFO] [has_valid_tenant_key] TENANT: <Tenant 1>
+2025-01-09 15:50:11,544 [INFO] [has_valid_tenant_key] Tenant is valid
+2025-01-09 15:50:11,545 [INFO] [/register] Entered register agent endpoint
+2025-01-09 15:50:11,546 [INFO] [/register] PAYLOAD: {'key': 'que-api01', 'token': '102166054d7d4bc788186fb98242deaf', 'version': '1.0.0', 'enabled': True, 'install_group': 'Default Group', 'public_addr': '127.0.0.1/8', 'uninstall': False, 'cpu_count': 6, 'logical_cpu_count': 6, 'memory': '7.75 GB', 'hostname': 'que-api01', 'fqdn': 'que-api01', 'family': 'linux', 'release': 'ubuntu', 'sys_version': '22.04', 'install_type': 'Client', 'edition': 'Unknown', 'build': '6.8.0-49-generic', 'machine': 'debian', 'processor': 'QEMU Virtual CPU version 2.5+', 'last_boot': '2024-12-25 08:37:41', 'uptime': 1296750}
+2025-01-09 15:50:11,586 [INFO] [/register] AGENT_ID: 8b348972279e49f68eb2c06748c7080e
+2025-01-09 15:50:15,952 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-09 15:50:16,016 [INFO] [/assets] Entered assets endpoint
+2025-01-09 20:52:36,003 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-09 20:52:36,034 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-09 20:52:49,434 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-09 20:52:49,452 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-09 20:57:50,548 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-09 20:57:50,567 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-09 20:58:08,809 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-09 20:58:08,882 [INFO] [/assets] Entered assets endpoint
+2025-01-09 20:58:22,100 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-09 20:58:22,155 [INFO] [/assets] Entered assets endpoint
+2025-01-09 20:58:42,059 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-09 20:58:42,077 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint

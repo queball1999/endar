@@ -60,6 +60,7 @@ type program struct {
 	agent *Agent
 }
 
+// Loads configuration from a file
 func loadConfig(configPath string) (*ini.File, error) {
 	cfg, err := ini.Load(configPath)
 	if err != nil {
@@ -68,10 +69,12 @@ func loadConfig(configPath string) (*ini.File, error) {
 	return cfg, nil
 }
 
+// Saves configuration to a file
 func saveConfig(configPath string, cfg *ini.File) error {
 	return cfg.SaveTo(configPath)
 }
 
+// Saves default configuration to a file
 func saveDefaultConfig(configPath, serverURL, registrationToken string) error {
 	cfg := ini.Empty()
 	cfg.Section("configuration").Key("server").SetValue(serverURL)
@@ -84,29 +87,29 @@ func saveDefaultConfig(configPath, serverURL, registrationToken string) error {
 	return saveConfig(configPath, cfg)
 }
 
-func initializeConfig() (string, string, int, string, string, bool, string, bool) {
-	serverURL := flag.String("server", "", "Server URL")
-	registrationToken := flag.String("key", "", "Registration Token")
-	configPath := flag.String("config", "config.ini", "Path to configuration file")
-	flag.Parse()
+// Initializes configuration using flags and config file
+func initializeConfig(flags map[string]interface{}) (string, string, int, string, string, bool, string, bool) {
+	configPath := flags["config"].(string)
+	serverURL := flags["server"].(string)
+	registrationToken := flags["key"].(string)
 
-	//FIXME: Double check the flags are overwritten when config loaded
-
+	// Check if config file exists, create default if missing
 	var cfg *ini.File
 	var err error
 
-	if _, err := os.Stat(*configPath); os.IsNotExist(err) {
+	if _, err := os.Stat(configPath); os.IsNotExist(err) {
 		log.Println("No config file found, creating new one...")
-		if err := saveDefaultConfig(*configPath, *serverURL, *registrationToken); err != nil {
+		if err := saveDefaultConfig(configPath, serverURL, registrationToken); err != nil {
 			log.Fatalf("Failed to save default config: %v", err)
 		}
 	}
 
-	cfg, err = loadConfig(*configPath)
+	cfg, err = loadConfig(configPath)
 	if err != nil {
 		log.Fatalf("Error loading config: %v", err)
 	}
 
+	// Load config values
 	server := cfg.Section("configuration").Key("server").String()
 	key := cfg.Section("configuration").Key("key").String()
 	interval, _ := cfg.Section("configuration").Key("interval").Int()
@@ -116,21 +119,24 @@ func initializeConfig() (string, string, int, string, string, bool, string, bool
 	aid := cfg.Section("configuration").Key("aid").String()
 	registered, _ := cfg.Section("configuration").Key("registered").Bool()
 
-	if *serverURL != "" {
-		server = *serverURL
-		cfg.Section("configuration").Key("server").SetValue(*serverURL)
+	// Override config with flags if provided
+	if serverURL != "" {
+		server = serverURL
+		cfg.Section("configuration").Key("server").SetValue(serverURL)
 	}
-	if *registrationToken != "" {
-		key = *registrationToken
-		cfg.Section("configuration").Key("key").SetValue(*registrationToken)
+	if registrationToken != "" {
+		key = registrationToken
+		cfg.Section("configuration").Key("key").SetValue(registrationToken)
 	}
-	if *configPath != "" {
-		configFilePath = *configPath
-		cfg.Section("configuration").Key("config_path").SetValue(*configPath)
+	if configPath != "" {
+		configFilePath = configPath
+		cfg.Section("configuration").Key("config_path").SetValue(configPath)
 	}
 
-	saveConfig(*configPath, cfg)
+	// Save updated config if changes were made
+	saveConfig(configPath, cfg)
 
+	// Print config if enabled
 	if printConfig {
 		fmt.Println("Server URL:", server)
 		fmt.Println("Registration Token:", key)
@@ -145,7 +151,103 @@ func initializeConfig() (string, string, int, string, string, bool, string, bool
 	return server, key, interval, debugLevel, configFilePath, printConfig, aid, registered
 }
 
+// Parses command-line flags and returns them as a map
+func parseFlags() map[string]interface{} {
+	flags := make(map[string]interface{})
 
+	// Configurable parameters
+	flags["server"] = flag.String("server", "", "Server URL")
+	flags["key"] = flag.String("key", "", "Registration Token")
+	flags["config"] = flag.String("config", "config.ini", "Path to configuration file")
+
+	// Service command flags
+	flags["install"] = flag.Bool("install", false, "Install the service")
+	flags["uninstall"] = flag.Bool("uninstall", false, "Uninstall the service")
+	flags["start"] = flag.Bool("start", false, "Start the service")
+	flags["stop"] = flag.Bool("stop", false, "Stop the service")
+	flags["restart"] = flag.Bool("restart", false, "Restart the service")
+	flags["status"] = flag.Bool("status", false, "Check the service status")
+
+	flag.Parse()
+
+	// Convert pointer values to actual values in the map
+	for key, value := range flags {
+		switch v := value.(type) {
+		case *string:
+			flags[key] = *v
+		case *bool:
+			flags[key] = *v
+		}
+	}
+
+	return flags
+}
+
+// handleServiceCommands processes service commands and exits after execution.
+func handleServiceCommands(s service.Service, flags map[string]interface{}) {
+	var err error
+
+	switch {
+	case flags["install"].(bool):
+		err = s.Install()
+		if err != nil {
+			log.Fatal("Failed to install service:", err)
+		}
+		log.Println("Service installed successfully.")
+		os.Exit(0)
+
+	case flags["uninstall"].(bool):
+		err = s.Uninstall()
+		if err != nil {
+			log.Fatal("Failed to uninstall service:", err)
+		}
+		log.Println("Service uninstalled successfully.")
+		os.Exit(0)
+
+	case flags["start"].(bool):
+		err = s.Start()
+		if err != nil {
+			log.Fatal("Failed to start service:", err)
+		}
+		log.Println("Service started successfully.")
+		os.Exit(0)
+
+	case flags["stop"].(bool):
+		err = s.Stop()
+		if err != nil {
+			log.Fatal("Failed to stop service:", err)
+		}
+		log.Println("Service stopped successfully.")
+		os.Exit(0)
+
+	case flags["restart"].(bool):
+		err = s.Restart()
+		if err != nil {
+			log.Fatal("Failed to restart service:", err)
+		}
+		log.Println("Service restarted successfully.")
+		os.Exit(0)
+
+	case flags["status"].(bool):
+		status, err := s.Status()
+		if err != nil {
+			log.Println("Could not determine service status. It may not be installed.")
+			os.Exit(1)
+		}
+
+		switch status {
+		case service.StatusRunning:
+			log.Println("Service is running.")
+		case service.StatusStopped:
+			log.Println("Service is stopped.")
+		default:
+			log.Println("Service status unknown.")
+		}
+		os.Exit(0)
+	}
+}
+
+// Returns the number of logical CPUs
 func getLogicalCPUCount() int {
 	count, err := cpu.Counts(true)
 	if err != nil {
@@ -154,6 +256,7 @@ func getLogicalCPUCount() int {
 	return count
 }
 
+// Returns system information
 func getSystemInfo(registrationKey string) SystemInfo {
 	hostname, _ := os.Hostname()
 	hostInfo, _ := host.Info()
@@ -193,6 +296,7 @@ func getSystemInfo(registrationKey string) SystemInfo {
 	}
 }
 
+// Registers the agent with the server
 func (a *Agent) registerAgent() (error) {
 	log.Println("Registering agent...")
 	data, _ := json.Marshal(a.AgentInfo)
@@ -247,12 +351,14 @@ func (a *Agent) registerAgent() (error) {
 	return nil
 }
 
+// Service interface implementation
 func (p *program) Start(s service.Service) error {
 	log.Println("Service is starting...")
 	go p.run()
 	return nil
 }
 
+// Service interface implementation
 func (p *program) run() {
 	// This is the main loop of the agent
 	// Place logic here to run at the specified interval
@@ -271,14 +377,18 @@ func (p *program) run() {
 	}
 }
 
+// Service interface implementation
 func (p *program) Stop(s service.Service) error {
 	log.Println("Service is stopping...")
 	return nil
 }
 
 func main() {
+	// Parse flags into a map
+	flags := parseFlags()
+
 	// Load configuration settings
-	server, key, interval, debugLevel, configPath, printConfig, aid, registered := initializeConfig()
+	server, key, interval, debugLevel, configPath, printConfig, aid, registered := initializeConfig(flags)
 
 	agent := &Agent{
 		ServerURL:       server,
@@ -293,7 +403,7 @@ func main() {
 	}
 
 	svcConfig := &service.Config{
-		Name:        "EndarAgent",
+		Name:        "endar-agent",
 		DisplayName: "Endar Monitoring Agent",
 		Description: "A cross-platform system monitoring agent.",
 	}
@@ -304,68 +414,8 @@ func main() {
 		log.Fatal(err)
 	}
 
-	// Command-line flag parsing
-	// FIXME: Ensure these work correctly
-    if len(os.Args) > 1 {
-        command := os.Args[1]
-		log.Println("Command:", command)
-        switch command {
-		case "install":
-			err := s.Install()
-			if err != nil {
-				log.Fatal("Failed to install service:", err)
-			}
-			fmt.Println("Service installed successfully.")
-			return
-		case "uninstall":
-			err := s.Uninstall()
-			if err != nil {
-				log.Fatal("Failed to uninstall service:", err)
-			}
-			fmt.Println("Service uninstalled successfully.")
-			return
-		case "start":
-			err := s.Start()
-			if err != nil {
-				log.Fatal("Failed to start service:", err)
-			}
-			fmt.Println("Service started successfully.")
-			return
-		case "stop":
-			err := s.Stop()
-			if err != nil {
-				log.Fatal("Failed to stop service:", err)
-			}
-			fmt.Println("Service stopped successfully.")
-			return
-		case "restart":
-			err := s.Restart()
-			if err != nil {
-				log.Fatal("Failed to restart service:", err)
-			}
-			fmt.Println("Service restarted successfully.")
-			return
-		case "status":
-            status, err := s.Status()
-            if err != nil {
-                fmt.Println("Could not determine service status. It may not be installed.")
-                return
-            }
-            switch status {
-            case service.StatusRunning:
-                fmt.Println("Service is running.")
-            case service.StatusStopped:
-                fmt.Println("Service is stopped.")
-            default:
-                fmt.Println("Service status unknown.")
-            }
-            return
-        default:
-            fmt.Println("Unknown command:", command)
-            fmt.Println("Usage: ./endar-server [install|uninstall|start|stop|restart|status]")
-            return
-		}
-	}
+	// Handle service commands such as install, uninstall, start, stop, restart, status
+	handleServiceCommands(s, flags)
 
     err = s.Run()
     if err != nil {
