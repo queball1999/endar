@@ -3,6 +3,9 @@ package main
 import (
 	"log"
 	"time"
+	"os"
+	"io"
+	"path/filepath"
 
 	"github.com/kardianos/service"
 	"endar_agent/agent"
@@ -13,6 +16,31 @@ import (
 
 type program struct {
 	agent *agent.Agent
+}
+
+// Initialize logging to a file in the same directory as the script
+func setupLogging() {
+	// Get the directory of the running executable
+	execPath, err := os.Executable()
+	if err != nil {
+		log.Fatalf("Failed to get executable path: %v", err)
+	}
+
+	execDir := filepath.Dir(execPath)
+	logFilePath := filepath.Join(execDir, "endar_agent.log")
+	log.Println("Log file path:", logFilePath)
+
+	// Open log file for writing (append mode)
+	logFile, err := os.OpenFile(logFilePath, os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
+	if err != nil {
+		log.Fatalf("Failed to open log file: %v", err)
+	}
+
+	// Set log output to both file and console
+	multiWriter := io.MultiWriter(os.Stdout, logFile)
+	log.SetOutput(multiWriter)
+
+	log.Println("Logging initialized. Writing to:", logFilePath)
 }
 
 // Start service
@@ -85,46 +113,52 @@ func handleServiceCommands(s service.Service, flags map[string]interface{}) {
 		if err != nil {
 			log.Fatal("Failed to install service:", err)
 		}
-		log.Println("Service installed successfully.")
-		return
+		log.Println("Service installed successfully.\nRun 'endar_agent.exe --start' to start the service.")
+		os.Exit(0)
 
 	case flags["uninstall"].(bool):
+		log.Println("Stopping service...")
+		err = s.Stop()
+		if err != nil {
+			log.Println("Service may not be running or installed, proceeding with uninstallation.")
+		}
+
 		err = s.Uninstall()
 		if err != nil {
 			log.Fatal("Failed to uninstall service:", err)
 		}
 		log.Println("Service uninstalled successfully.")
-		return
+		os.Exit(0)
 
 	case flags["start"].(bool):
 		err = s.Start()
 		if err != nil {
 			log.Fatal("Failed to start service:", err)
 		}
-		log.Println("Service started successfully.")
-		return
+		log.Println("Service started successfully.\nRun 'endar_agent.exe --stop' to stop the service.")
+		os.Exit(0)
 
 	case flags["stop"].(bool):
 		err = s.Stop()
 		if err != nil {
 			log.Fatal("Failed to stop service:", err)
 		}
-		log.Println("Service stopped successfully.")
-		return
+		log.Println("Service stopped successfully.\nRun 'endar_agent.exe --start' to start the service.")
+		os.Exit(0)
 
 	case flags["restart"].(bool):
 		err = s.Restart()
 		if err != nil {
 			log.Fatal("Failed to restart service:", err)
 		}
-		log.Println("Service restarted successfully.")
-		return
+		log.Println("Service restarted successfully.\nRun 'endar_agent.exe --status' to check the service status.")
+		os.Exit(0)
 
 	case flags["status"].(bool):
 		status, err := s.Status()
 		if err != nil {
-			log.Println("Could not determine service status. It may not be installed.")
-			return
+			log.Println("Could not determine service status. It may not be installed.\nRun 'endar_agent.exe --install' to install the service.")
+			os.Exit(0)
 		}
 		switch status {
 		case service.StatusRunning:
@@ -134,11 +168,14 @@ func handleServiceCommands(s service.Service, flags map[string]interface{}) {
 		default:
 			log.Println("Service status unknown.")
 		}
-		return
+		os.Exit(0)
 	}
 }
 
 func main() {
+	// Setup logging before anything else
+	setupLogging()
+
 	// Parse command-line flags
 	flags := config.ParseFlags()
 

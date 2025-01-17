@@ -68,4 +68,5 @@ def data_collection(agent):
     data = zlib.decompress(request.data).decode("utf-8")
     record = json.loads(data)
     handle_collection(agent, record)
+    agent.last_active = arrow.utcnow().datetime
     return jsonify({"message":"ok"})

@@ -1046,3 +1046,557 @@
 2025-01-17 16:17:59,151 [INFO] [/collection] Entered data_collection endpoint
 2025-01-17 16:17:59,183 [INFO] within has_valid_tenant_and_agent
 2025-01-17 16:17:59,198 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 18:58:51,593 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-17 18:58:51,636 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-17 18:58:58,280 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-17 18:58:58,299 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-17 18:59:01,904 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-17 18:59:01,979 [INFO] [/assets] Entered assets endpoint
+2025-01-17 19:39:47,708 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-17 19:39:47,725 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-17 19:40:06,326 [INFO] within has_valid_tenant_key
+2025-01-17 19:40:06,327 [INFO] [has_valid_tenant_key] TOKEN: bdf46fdffe7743879769e7a7a3573959
+2025-01-17 19:40:06,345 [INFO] [has_valid_tenant_key] TENANT: <Tenant 1>
+2025-01-17 19:40:06,346 [INFO] [has_valid_tenant_key] Tenant is valid
+2025-01-17 19:40:06,346 [INFO] [/register] Entered register agent endpoint
+2025-01-17 19:40:06,348 [INFO] [/register] PAYLOAD: {'key': 'que-api01', 'token': 'bdf46fdffe7743879769e7a7a3573959', 'version': '1.0.0', 'enabled': True, 'public_addr': '127.0.0.1/8', 'cpu_count': 6, 'logical_cpu_count': 6, 'memory': '7.75 GB', 'hostname': 'que-api01', 'family': 'linux', 'release': 'ubuntu', 'uptime': 260073}
+2025-01-17 19:40:06,423 [INFO] [/register] AGENT_ID: 99b85ec6e131454abadbf0cc0be76ac1
+2025-01-17 19:41:40,021 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-17 19:41:40,102 [INFO] [/assets] Entered assets endpoint
+2025-01-17 19:45:42,581 [INFO] within has_valid_tenant_key
+2025-01-17 19:45:42,582 [INFO] [has_valid_tenant_key] TOKEN: bdf46fdffe7743879769e7a7a3573959
+2025-01-17 19:45:42,600 [INFO] [has_valid_tenant_key] TENANT: <Tenant 1>
+2025-01-17 19:45:42,600 [INFO] [has_valid_tenant_key] Tenant is valid
+2025-01-17 19:45:42,600 [INFO] [/register] Entered register agent endpoint
+2025-01-17 19:45:42,601 [INFO] [/register] PAYLOAD: {'key': 'que-api01', 'token': 'bdf46fdffe7743879769e7a7a3573959', 'version': '1.0.0', 'enabled': True, 'public_addr': '127.0.0.1/8', 'cpu_count': 6, 'logical_cpu_count': 6, 'memory': '7.75 GB', 'hostname': 'que-api01', 'family': 'linux', 'release': 'ubuntu', 'uptime': 260409}
+2025-01-17 19:49:37,845 [INFO] within has_valid_tenant_key
+2025-01-17 19:49:37,846 [INFO] [has_valid_tenant_key] TOKEN: bdf46fdffe7743879769e7a7a3573959
+2025-01-17 19:49:37,871 [INFO] [has_valid_tenant_key] TENANT: <Tenant 1>
+2025-01-17 19:49:37,872 [INFO] [has_valid_tenant_key] Tenant is valid
+2025-01-17 19:49:37,873 [INFO] [/register] Entered register agent endpoint
+2025-01-17 19:49:37,875 [INFO] [/register] PAYLOAD: {'key': 'que-api01', 'token': 'bdf46fdffe7743879769e7a7a3573959', 'version': '1.0.0', 'enabled': True, 'public_addr': '127.0.0.1/8', 'cpu_count': 6, 'logical_cpu_count': 6, 'memory': '7.75 GB', 'hostname': 'que-api01', 'family': 'linux', 'release': 'ubuntu', 'uptime': 260644}
+2025-01-17 19:49:37,919 [INFO] [/register] AGENT_ID: 5773fe0d86c64947b1eaa4f6a39fb9ab
+2025-01-17 19:49:37,938 [INFO] within has_valid_tenant_and_agent
+2025-01-17 19:49:37,956 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 19:49:38,033 [INFO] within has_valid_tenant_and_agent
+2025-01-17 19:49:38,045 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 19:49:45,903 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-17 19:49:45,986 [INFO] [/assets] Entered assets endpoint
+2025-01-17 19:50:38,273 [INFO] within has_valid_tenant_and_agent
+2025-01-17 19:50:38,291 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 19:50:38,351 [INFO] within has_valid_tenant_and_agent
+2025-01-17 19:50:38,365 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 19:51:38,598 [INFO] within has_valid_tenant_and_agent
+2025-01-17 19:51:38,626 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 19:51:38,712 [INFO] within has_valid_tenant_and_agent
+2025-01-17 19:51:38,729 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 19:52:38,970 [INFO] within has_valid_tenant_and_agent
+2025-01-17 19:52:38,985 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 19:52:39,036 [INFO] within has_valid_tenant_and_agent
+2025-01-17 19:52:39,051 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 19:53:39,254 [INFO] within has_valid_tenant_and_agent
+2025-01-17 19:53:39,295 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 19:53:39,349 [INFO] within has_valid_tenant_and_agent
+2025-01-17 19:53:39,365 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 19:54:39,586 [INFO] within has_valid_tenant_and_agent
+2025-01-17 19:54:39,618 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 19:54:39,705 [INFO] within has_valid_tenant_and_agent
+2025-01-17 19:54:39,722 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 19:55:39,964 [INFO] within has_valid_tenant_and_agent
+2025-01-17 19:55:39,994 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 19:55:40,078 [INFO] within has_valid_tenant_and_agent
+2025-01-17 19:55:40,092 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 19:56:40,271 [INFO] within has_valid_tenant_and_agent
+2025-01-17 19:56:40,288 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 19:56:40,412 [INFO] within has_valid_tenant_and_agent
+2025-01-17 19:56:40,451 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 19:57:40,699 [INFO] within has_valid_tenant_and_agent
+2025-01-17 19:57:40,726 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 19:57:40,793 [INFO] within has_valid_tenant_and_agent
+2025-01-17 19:57:40,808 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 19:58:41,000 [INFO] within has_valid_tenant_and_agent
+2025-01-17 19:58:41,014 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 19:58:41,085 [INFO] within has_valid_tenant_and_agent
+2025-01-17 19:58:41,101 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 19:59:41,257 [INFO] within has_valid_tenant_and_agent
+2025-01-17 19:59:41,274 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 19:59:41,321 [INFO] within has_valid_tenant_and_agent
+2025-01-17 19:59:41,342 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:00:41,595 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:00:41,628 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:00:41,715 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:00:41,729 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:01:41,987 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:01:42,004 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:01:42,070 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:01:42,082 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:02:42,280 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:02:42,309 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:02:42,373 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:02:42,388 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:03:42,606 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:03:42,638 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:03:42,712 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:03:42,725 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:04:42,977 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:04:43,005 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:04:43,075 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:04:43,090 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:05:43,291 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:05:43,325 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:05:43,397 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:05:43,409 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:06:43,623 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:06:43,667 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:06:43,755 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:06:43,762 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:07:44,007 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:07:44,042 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:07:44,117 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:07:44,128 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:08:44,385 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:08:44,448 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:08:44,536 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:08:44,564 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:09:44,852 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:09:44,908 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:09:45,012 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:09:45,023 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:10:45,252 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:10:45,289 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:10:45,372 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:10:45,394 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:11:45,644 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:11:45,679 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:11:45,751 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:11:45,762 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:12:45,949 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:12:45,978 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:12:46,059 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:12:46,078 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:13:01,257 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-17 20:13:01,350 [INFO] [/assets] Entered assets endpoint
+2025-01-17 20:13:46,324 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:13:46,361 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:13:46,428 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:13:46,439 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:14:46,674 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:14:46,743 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:14:46,858 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:14:46,873 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:15:47,221 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:15:47,253 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:15:47,330 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:15:47,346 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:16:47,636 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:16:47,698 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:16:47,794 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:16:47,808 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:17:47,998 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:17:48,029 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:17:48,095 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:17:48,111 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:18:48,391 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:18:48,486 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:18:48,571 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:18:48,587 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:19:48,830 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:19:48,865 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:19:48,926 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:19:48,938 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:20:49,164 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:20:49,196 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:20:49,263 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:20:49,276 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:21:49,487 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:21:49,507 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:21:49,589 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:21:49,610 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:22:49,853 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:22:49,894 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:22:49,975 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:22:49,988 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:23:50,244 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:23:50,294 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:23:50,370 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:23:50,385 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:24:50,623 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:24:50,657 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:24:50,746 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:24:50,759 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:25:50,996 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:25:51,029 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:25:51,088 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:25:51,102 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:26:51,309 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:26:51,348 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:26:51,424 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:26:51,440 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:27:51,727 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:27:51,777 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:27:51,852 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:27:51,867 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:28:52,167 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:28:52,242 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:28:52,339 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:28:52,356 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:29:52,563 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:29:52,607 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:29:52,680 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:29:52,693 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:30:52,935 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:30:52,999 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:30:53,089 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:30:53,105 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:31:53,409 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:31:53,459 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:31:53,539 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:31:53,556 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:32:53,782 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:32:53,817 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:32:53,914 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:32:53,926 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:33:54,143 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:33:54,177 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:33:54,243 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:33:54,254 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:34:54,514 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:34:54,558 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:34:54,632 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:34:54,642 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:35:54,851 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:35:54,887 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:35:54,959 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:35:54,975 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:36:55,269 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:36:55,336 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:36:55,439 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:36:55,452 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:37:55,714 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:37:55,747 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:37:55,808 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:37:55,829 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:38:56,083 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:38:56,130 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:38:56,208 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:38:56,228 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:39:56,492 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:39:56,521 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:39:56,594 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:39:56,606 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:40:56,845 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:40:56,882 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:40:56,952 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:40:56,966 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:41:57,160 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:41:57,186 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:41:57,248 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:41:57,260 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:42:57,504 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:42:57,544 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:42:57,622 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:42:57,638 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:43:57,892 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:43:57,921 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:43:58,010 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:43:58,023 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:44:58,219 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:44:58,277 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:44:58,362 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:44:58,389 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:45:58,615 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:45:58,661 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:45:58,744 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:45:58,757 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:46:58,966 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:46:59,001 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:46:59,065 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:46:59,082 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:47:59,305 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:47:59,340 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:47:59,407 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:47:59,421 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:48:59,710 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:48:59,773 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:48:59,843 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:48:59,862 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:50:00,121 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:50:00,150 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:50:00,213 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:50:00,230 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:51:00,443 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:51:00,478 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:51:00,556 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:51:00,575 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:52:00,829 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:52:00,859 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:52:00,950 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:52:00,965 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:53:01,229 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:53:01,263 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:53:01,343 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:53:01,357 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:54:01,567 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:54:01,597 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:54:01,657 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:54:01,670 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:55:01,899 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:55:01,932 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:55:02,065 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:55:02,094 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:56:02,366 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:56:02,407 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:56:02,491 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:56:02,503 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:57:02,693 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:57:02,723 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:57:02,795 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:57:02,809 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:58:03,073 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:58:03,120 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:58:03,215 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:58:03,226 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:59:03,467 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:59:03,500 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 20:59:03,574 [INFO] within has_valid_tenant_and_agent
+2025-01-17 20:59:03,586 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:00:03,774 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:00:03,814 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:00:03,922 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:00:03,940 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:01:04,204 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:01:04,235 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:01:04,337 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:01:04,358 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:02:04,553 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:02:04,587 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:02:04,679 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:02:04,694 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:03:04,900 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:03:04,937 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:03:04,999 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:03:05,017 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:04:05,258 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:04:05,313 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:04:05,379 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:04:05,402 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:05:05,648 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:05:05,689 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:05:05,756 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:05:05,768 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:06:06,036 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:06:06,074 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:06:06,151 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:06:06,166 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:07:06,327 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:07:06,374 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:07:06,478 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:07:06,493 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:08:06,736 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:08:06,774 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:08:06,853 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:08:06,869 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:09:07,068 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:09:07,103 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:09:07,173 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:09:07,187 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:10:07,396 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:10:07,428 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:10:07,487 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:10:07,500 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:11:07,787 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:11:07,832 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:11:07,913 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:11:07,928 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:12:08,142 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:12:08,198 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:12:08,283 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:12:08,295 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:13:08,552 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:13:08,585 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:13:08,676 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:13:08,692 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:14:08,961 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:14:08,991 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:14:09,071 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:14:09,084 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:15:09,291 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:15:09,316 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:15:09,372 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:15:09,388 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:16:09,634 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:16:09,674 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:16:09,750 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:16:09,763 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:17:10,022 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:17:10,058 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:17:10,133 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:17:10,149 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:18:10,369 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:18:10,412 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:18:10,477 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:18:10,494 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:19:10,722 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:19:10,756 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:19:10,834 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:19:10,848 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:20:11,073 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:20:11,102 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:20:11,160 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:20:11,176 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:21:11,384 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:21:11,414 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:21:11,480 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:21:11,493 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:22:11,708 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:22:11,742 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:22:11,810 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:22:11,828 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:23:12,074 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:23:12,107 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:23:12,215 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:23:12,231 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:24:12,444 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:24:12,487 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:24:12,609 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:24:12,623 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:25:12,871 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:25:12,905 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:25:12,984 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:25:12,996 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:26:13,236 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:26:13,264 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:26:13,329 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:26:13,345 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:27:13,523 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:27:13,549 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:27:13,606 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:27:13,619 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:28:13,823 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:28:13,840 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:28:13,896 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:28:13,919 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:29:14,141 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:29:14,176 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:29:14,233 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:29:14,248 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:30:14,437 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:30:14,453 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:30:14,498 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:30:14,529 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:31:14,708 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:31:14,722 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:31:14,767 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:31:14,795 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:32:15,050 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:32:15,065 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:32:15,110 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:32:15,126 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:33:15,300 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:33:15,313 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:33:15,359 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:33:15,373 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:34:13,820 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-17 21:34:13,837 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-17 21:34:15,235 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-17 21:34:15,259 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-17 21:34:15,593 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:34:15,604 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:34:15,672 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:34:15,684 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:34:15,843 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-17 21:34:15,904 [INFO] [/assets] Entered assets endpoint
+2025-01-17 21:34:40,201 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:34:40,217 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:34:40,266 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:34:40,281 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:35:40,467 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:35:40,481 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:35:40,570 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:35:40,584 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:36:05,207 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-17 21:36:05,273 [INFO] [/assets] Entered assets endpoint
+2025-01-17 21:36:07,789 [INFO] [/assets] Entered assets endpoint
+2025-01-17 21:47:21,967 [INFO] within has_valid_tenant_key
+2025-01-17 21:47:21,968 [INFO] [has_valid_tenant_key] TOKEN: bdf46fdffe7743879769e7a7a3573959
+2025-01-17 21:47:21,989 [INFO] [has_valid_tenant_key] TENANT: <Tenant 1>
+2025-01-17 21:47:21,990 [INFO] [has_valid_tenant_key] Tenant is valid
+2025-01-17 21:47:21,990 [INFO] [/register] Entered register agent endpoint
+2025-01-17 21:47:21,991 [INFO] [/register] PAYLOAD: {'key': 'QUE-PC', 'token': 'bdf46fdffe7743879769e7a7a3573959', 'version': '1.0.0', 'enabled': True, 'public_addr': 'fe80::84ca:b524:f761:a30/64', 'cpu_count': 16, 'logical_cpu_count': 16, 'memory': '31.88 GB', 'hostname': 'QUE-PC', 'family': 'windows', 'release': 'Microsoft Windows 10 Pro', 'uptime': 91652}
+2025-01-17 21:48:11,075 [INFO] [/assets] Entered assets endpoint
+2025-01-17 21:51:55,998 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-17 21:51:56,079 [INFO] [/assets] Entered assets endpoint
+2025-01-17 21:52:00,179 [INFO] within has_valid_tenant_key
+2025-01-17 21:52:00,180 [INFO] [has_valid_tenant_key] TOKEN: bdf46fdffe7743879769e7a7a3573959
+2025-01-17 21:52:00,189 [INFO] [has_valid_tenant_key] TENANT: None
+2025-01-17 21:52:00,189 [INFO] [has_valid_tenant_key] Invalid tenant token
+2025-01-17 21:52:18,532 [INFO] within has_valid_tenant_key
+2025-01-17 21:52:18,533 [INFO] [has_valid_tenant_key] TOKEN: 31f93fe92e954652910e82e1bad03b3b
+2025-01-17 21:52:18,539 [INFO] [has_valid_tenant_key] TENANT: <Tenant 1>
+2025-01-17 21:52:18,539 [INFO] [has_valid_tenant_key] Tenant is valid
+2025-01-17 21:52:18,539 [INFO] [/register] Entered register agent endpoint
+2025-01-17 21:52:18,540 [INFO] [/register] PAYLOAD: {'key': 'QUE-PC', 'token': '31f93fe92e954652910e82e1bad03b3b', 'version': '1.0.0', 'enabled': True, 'public_addr': 'fe80::84ca:b524:f761:a30/64', 'cpu_count': 16, 'logical_cpu_count': 16, 'memory': '31.88 GB', 'hostname': 'QUE-PC', 'family': 'windows', 'release': 'Microsoft Windows 10 Pro', 'uptime': 91948}
+2025-01-17 21:52:18,580 [INFO] [/register] AGENT_ID: 7863971ec5f8435b998feafaa742e8e6
+2025-01-17 21:52:18,595 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:52:18,605 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:52:18,658 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:52:18,669 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:52:23,909 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-17 21:52:23,977 [INFO] [/assets] Entered assets endpoint
+2025-01-17 21:52:56,771 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-17 21:52:56,828 [INFO] [/assets] Entered assets endpoint
+2025-01-17 21:53:18,795 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:53:18,812 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:53:18,860 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:53:18,873 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:53:58,441 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:53:58,466 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:53:58,524 [INFO] within has_valid_tenant_and_agent
+2025-01-17 21:53:58,539 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 21:54:37,515 [INFO] [/assets] Entered assets endpoint
+2025-01-17 21:54:39,702 [INFO] [/assets] Entered assets endpoint
+2025-01-17 21:54:55,311 [INFO] [/assets] Entered assets endpoint
+2025-01-17 21:54:56,781 [INFO] [/assets] Entered assets endpoint
+2025-01-17 21:55:06,879 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-17 21:55:06,958 [INFO] [/assets] Entered assets endpoint
+2025-01-17 21:55:08,038 [INFO] [/assets] Entered assets endpoint
+2025-01-17 21:57:20,031 [INFO] [/assets] Entered assets endpoint
+2025-01-17 21:59:41,570 [INFO] [/assets] Entered assets endpoint
+2025-01-17 22:00:57,469 [INFO] within has_valid_tenant_and_agent
+2025-01-17 22:00:57,489 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 22:00:57,539 [INFO] within has_valid_tenant_and_agent
+2025-01-17 22:00:57,549 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 22:11:02,718 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-17 22:11:02,797 [INFO] [/assets] Entered assets endpoint
+2025-01-17 22:12:08,539 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-17 22:12:08,611 [INFO] [/assets] Entered assets endpoint
+2025-01-17 22:12:54,078 [INFO] [/assets] Entered assets endpoint
+2025-01-17 22:12:55,282 [INFO] [/assets] Entered assets endpoint
+2025-01-17 22:12:57,439 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-17 22:12:57,514 [INFO] [/assets] Entered assets endpoint
+2025-01-17 22:13:16,573 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-17 22:13:16,649 [INFO] [/assets] Entered assets endpoint
+2025-01-17 22:13:54,922 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-17 22:13:55,078 [INFO] [/assets] Entered assets endpoint
+2025-01-17 22:14:20,280 [INFO] within has_valid_tenant_key
+2025-01-17 22:14:20,280 [INFO] [has_valid_tenant_key] TOKEN: 31f93fe92e954652910e82e1bad03b3b
+2025-01-17 22:14:20,288 [INFO] [has_valid_tenant_key] TENANT: <Tenant 1>
+2025-01-17 22:14:20,289 [INFO] [has_valid_tenant_key] Tenant is valid
+2025-01-17 22:14:20,289 [INFO] [/register] Entered register agent endpoint
+2025-01-17 22:14:20,290 [INFO] [/register] PAYLOAD: {'key': 'QUE-PC', 'token': '31f93fe92e954652910e82e1bad03b3b', 'version': '1.0.0', 'enabled': True, 'public_addr': 'fe80::84ca:b524:f761:a30/64', 'cpu_count': 16, 'logical_cpu_count': 16, 'memory': '31.88 GB', 'hostname': 'QUE-PC', 'family': 'windows', 'release': 'Microsoft Windows 10 Pro', 'uptime': 93270}
+2025-01-17 22:14:20,317 [INFO] [/register] AGENT_ID: cff8c7243228421ab9d4bcd003e64314
+2025-01-17 22:14:20,333 [INFO] within has_valid_tenant_and_agent
+2025-01-17 22:14:20,344 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 22:14:20,379 [INFO] within has_valid_tenant_and_agent
+2025-01-17 22:14:20,391 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 22:14:25,896 [INFO] [/assets] Entered assets endpoint
+2025-01-17 22:14:27,963 [INFO] [/assets] Entered assets endpoint
+2025-01-17 22:14:27,994 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-17 22:15:04,427 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-17 22:15:04,489 [INFO] [/assets] Entered assets endpoint
+2025-01-17 22:17:46,038 [INFO] within has_valid_tenant_and_agent
+2025-01-17 22:17:46,085 [INFO] within has_valid_tenant_and_agent
+2025-01-17 22:18:40,638 [INFO] within has_valid_tenant_and_agent
+2025-01-17 22:18:40,709 [INFO] within has_valid_tenant_and_agent
+2025-01-17 22:19:40,868 [INFO] within has_valid_tenant_and_agent
+2025-01-17 22:19:40,913 [INFO] within has_valid_tenant_and_agent

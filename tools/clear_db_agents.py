@@ -19,6 +19,11 @@ def clear_agents():
         connection.commit()
         print("[INFO] Cleared all performance data from the database")
 
+        # Delete all records from the agent_disks table
+        cursor.execute("DELETE FROM agent_disks")
+        connection.commit()
+        print("[INFO] Cleared all agent disks data from the database")
+
         # Delete all records from the agent table
         cursor.execute("DELETE FROM agents")
         connection.commit()

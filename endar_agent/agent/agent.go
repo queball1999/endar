@@ -107,10 +107,11 @@ func (a *Agent) RegisterAgent() (error) {
 		
 	}
 
-	// If successfully registered, save to config
-	if resp.StatusCode == 200 {
+	// If Agent is registered, save to config
+	if resp.StatusCode == 200 || responseMap["registered"] == true {
 		if agentID, exists := responseMap["agent_id"].(string); exists {
 			a.AID = agentID
+			a.Registered = true
 			cfg, err := config.LoadConfig(a.ConfigPath)
 			if err == nil {
 				cfg.Section("configuration").Key("aid").SetValue(agentID)

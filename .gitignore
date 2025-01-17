@@ -70,7 +70,7 @@ app/app.log
 # Agent INI File
 */config.ini
 
-# Binary
-*/endar_agent
-*/endar_agent.exe
+# Endar Agent Files
+endar_agent/build/*
+*/endar_agent_*
 
