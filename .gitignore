@@ -68,8 +68,9 @@ app/app.log
 */*.sum
 
 # Agent INI File
-agent/config.ini
+*/config.ini
 
 # Binary
-agent/endar-agent
-agent/endar-agent.exe
+*/endar_agent
+*/endar_agent.exe
+

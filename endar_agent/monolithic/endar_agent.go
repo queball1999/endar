@@ -16,10 +16,12 @@ import (
 	"github.com/shirou/gopsutil/host"
 	"github.com/shirou/gopsutil/mem"
 	"github.com/shirou/gopsutil/net"
+	"github.com/shirou/gopsutil/disk"
+	"github.com/shirou/gopsutil/process"
 	"gopkg.in/ini.v1"
 )
 
-type SystemInfo struct {
+type AgentInfo struct {
 	Key             string `json:"key"`
 	Token           string `json:"token"`
 	Version         string `json:"version"`
@@ -53,7 +55,35 @@ type Agent struct {
 	PrintConfig     bool
 	AID             string
 	Registered      bool
-	AgentInfo       SystemInfo
+	AgentInfo       AgentInfo
+}
+
+// AgentPerformance - Struct to match Performance model
+type AgentPerformance struct {
+	CPULoad        float64            `json:"cpu_load"`
+	CPULoadPerCore map[string]float64 `json:"cpu_load_per_core"`
+	MemTotal       float64            `json:"mem_total"`
+	MemUsed        float64            `json:"mem_used"`
+	MemFree        float64            `json:"mem_free"`
+	MemPercentUsed float64            `json:"mem_percent_used"`
+	SwapTotal      float64            `json:"swap_total"`
+	SwapUsed       float64            `json:"swap_used"`
+	SwapFree       float64            `json:"swap_free"`
+	SwapPercent    float64            `json:"swap_percent_used"`
+	SwappedIn      float64            `json:"swapped_in"`
+	SwappedOut     float64            `json:"swapped_out"`
+}
+
+// AgentDisk - Struct to match AgentDisk model
+type AgentDisk struct {
+	UsedPercent int    `json:"used_percent"`
+	Used        string `json:"used"`
+	Mount       string `json:"mount"`
+	Free        string `json:"free"`
+	FSType      string `json:"fs_type"`
+	Device      string `json:"device"`
+	Total       string `json:"total"`
+	Options     string `json:"options"`
 }
 
 type program struct {
@@ -257,7 +287,7 @@ func getLogicalCPUCount() int {
 }
 
 // Returns system information
-func getSystemInfo(registrationKey string) SystemInfo {
+func getAgentInfo(registrationKey string) AgentInfo {
 	hostname, _ := os.Hostname()
 	hostInfo, _ := host.Info()
 	cpuInfo, _ := cpu.Info()
@@ -270,7 +300,7 @@ func getSystemInfo(registrationKey string) SystemInfo {
 
 	lastBoot := time.Unix(int64(hostInfo.BootTime), 0).Format("2006-01-02 15:04:05")
 
-	return SystemInfo{
+	return AgentInfo{
 		Key:             hostname,
 		Token:           registrationKey,
 		Version:         "1.0.0",
@@ -399,11 +429,11 @@ func main() {
 		PrintConfig:     printConfig,
 		AID:             aid,
 		Registered:      registered,
-		AgentInfo:       getSystemInfo(key),
+		AgentInfo:       getAgentInfo(key),
 	}
 
 	svcConfig := &service.Config{
-		Name:        "endar-agent",
+		Name:        "endar_agent",
 		DisplayName: "Endar Monitoring Agent",
 		Description: "A cross-platform system monitoring agent.",
 	}

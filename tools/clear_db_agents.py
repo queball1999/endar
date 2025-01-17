@@ -13,6 +13,13 @@ def clear_agents():
     try:
         connection = psycopg2.connect(SQLALCHEMY_DATABASE_URI)
         cursor = connection.cursor()
+
+        # Delete all records from the performance table
+        cursor.execute("DELETE FROM performance")
+        connection.commit()
+        print("[INFO] Cleared all performance data from the database")
+
+        # Delete all records from the agent table
         cursor.execute("DELETE FROM agents")
         connection.commit()
         cursor.close()
