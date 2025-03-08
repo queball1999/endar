@@ -43,9 +43,10 @@ func ParseFlags() map[string]interface{} {
 
 // Load configuration from file
 func LoadConfig(configPath string) (*ini.File, error) {
+	log.Println("Loading config from:", configPath)
 	cfg, err := ini.Load(configPath)
 	if err != nil {
-		return nil, fmt.Errorf("failed to load config.ini: %v", err)
+		return nil, log.Errorf("failed to load config.ini: %v", err)
 	}
 	return cfg, nil
 }

@@ -22,13 +22,13 @@ type program struct {
 func setupLogging() {
 	// Get the directory of the running executable
 	execPath, err := os.Executable()
+
 	if err != nil {
 		log.Fatalf("Failed to get executable path: %v", err)
 	}
 
 	execDir := filepath.Dir(execPath)
 	logFilePath := filepath.Join(execDir, "endar_agent.log")
-	log.Println("Log file path:", logFilePath)
 
 	// Open log file for writing (append mode)
 	logFile, err := os.OpenFile(logFilePath, os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
@@ -104,6 +104,7 @@ func (p *program) Stop(s service.Service) error {
 }
 
 // Handle service commands (install, start, stop, restart, status)
+//FIXME: install seems to work but the service never actually starts? seems to fail
 func handleServiceCommands(s service.Service, flags map[string]interface{}) {
 	var err error
 
@@ -182,6 +183,8 @@ func main() {
 	// Load configuration settings
 	server, key, interval, debugLevel, configPath, printConfig, aid, registered := config.InitializeConfig(flags)
 
+	log.Println("[ATTN] Key:", key)
+
 	// Create agent instance
 	ag := &agent.Agent{
 		ServerURL:       server,
@@ -194,6 +197,8 @@ func main() {
 		Registered:      registered,
 		AgentInfo:       agent.GetAgentInfo(key),
 	}
+
+	log.Println("[ATTN] AgentInfo:", ag.AgentInfo)
 
 	// Define service configuration
 	svcConfig := &service.Config{

@@ -1600,3 +1600,127 @@
 2025-01-17 22:18:40,709 [INFO] within has_valid_tenant_and_agent
 2025-01-17 22:19:40,868 [INFO] within has_valid_tenant_and_agent
 2025-01-17 22:19:40,913 [INFO] within has_valid_tenant_and_agent
+2025-01-17 22:24:11,220 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-17 22:24:11,340 [INFO] [/assets] Entered assets endpoint
+2025-01-17 22:25:04,181 [INFO] within has_valid_tenant_and_agent
+2025-01-17 22:25:04,219 [INFO] within has_valid_tenant_and_agent
+2025-01-17 22:26:13,150 [INFO] [/assets] Entered assets endpoint
+2025-01-17 22:29:02,439 [INFO] within has_valid_tenant_key
+2025-01-17 22:29:02,440 [INFO] [has_valid_tenant_key] TOKEN: 31f93fe92e954652910e82e1bad03b3b
+2025-01-17 22:29:02,454 [INFO] [has_valid_tenant_key] TENANT: <Tenant 1>
+2025-01-17 22:29:02,455 [INFO] [has_valid_tenant_key] Tenant is valid
+2025-01-17 22:29:02,455 [INFO] [/register] Entered register agent endpoint
+2025-01-17 22:29:02,457 [INFO] [/register] PAYLOAD: {'key': 'que-api01', 'token': '31f93fe92e954652910e82e1bad03b3b', 'version': '1.0.0', 'enabled': True, 'public_addr': '127.0.0.1/8', 'cpu_count': 6, 'logical_cpu_count': 6, 'memory': '7.75 GB', 'hostname': 'que-api01', 'family': 'linux', 'release': 'ubuntu', 'uptime': 270209}
+2025-01-17 22:29:02,501 [INFO] [/register] AGENT_ID: c3e67be75100431592d87c02cabd7707
+2025-01-17 22:29:02,534 [INFO] within has_valid_tenant_and_agent
+2025-01-17 22:29:02,547 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 22:29:02,607 [INFO] within has_valid_tenant_and_agent
+2025-01-17 22:29:02,620 [INFO] [/collection] Entered data_collection endpoint
+2025-01-17 22:29:08,209 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-17 22:29:08,277 [INFO] [/assets] Entered assets endpoint
+2025-01-17 22:30:52,050 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-17 22:30:52,122 [INFO] [/assets] Entered assets endpoint
+2025-01-17 22:37:08,824 [INFO] [/assets] Entered assets endpoint
+2025-01-17 22:37:10,917 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-17 22:37:11,000 [INFO] [/assets] Entered assets endpoint
+2025-01-17 22:47:42,193 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-17 22:47:42,262 [INFO] [/assets] Entered assets endpoint
+2025-01-17 22:47:43,380 [INFO] [/assets] Entered assets endpoint
+2025-01-18 00:12:34,042 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-18 00:12:34,130 [INFO] [/assets] Entered assets endpoint
+2025-01-18 00:12:40,485 [INFO] within has_valid_tenant_key
+2025-01-18 00:12:40,486 [INFO] [has_valid_tenant_key] TOKEN: 31f93fe92e954652910e82e1bad03b3b
+2025-01-18 00:12:40,494 [INFO] [has_valid_tenant_key] TENANT: <Tenant 1>
+2025-01-18 00:12:40,494 [INFO] [has_valid_tenant_key] Tenant is valid
+2025-01-18 00:12:40,495 [INFO] [/register] Entered register agent endpoint
+2025-01-18 00:12:40,495 [INFO] [/register] PAYLOAD: {'key': 'que-api01', 'token': '31f93fe92e954652910e82e1bad03b3b', 'version': '1.0.0', 'enabled': True, 'public_addr': '127.0.0.1/8', 'cpu_count': 6, 'logical_cpu_count': 6, 'memory': '7.75 GB', 'hostname': 'que-api01', 'family': 'linux', 'release': 'ubuntu', 'uptime': 276427}
+2025-01-18 00:12:40,533 [INFO] [/register] AGENT_ID: 149348f83484439e80a4338217dabf08
+2025-01-18 00:12:40,559 [INFO] within has_valid_tenant_and_agent
+2025-01-18 00:12:40,572 [INFO] [/collection] Entered data_collection endpoint
+2025-01-18 00:12:40,642 [INFO] within has_valid_tenant_and_agent
+2025-01-18 00:12:40,658 [INFO] [/collection] Entered data_collection endpoint
+2025-01-18 00:12:42,891 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-18 00:12:42,959 [INFO] [/assets] Entered assets endpoint
+2025-01-18 00:15:02,546 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-18 00:15:02,617 [INFO] [/assets] Entered assets endpoint
+2025-01-18 03:49:39,231 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-18 03:49:39,262 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-18 03:49:42,346 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-18 03:49:42,412 [INFO] [/assets] Entered assets endpoint
+2025-01-18 03:55:38,935 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-18 03:55:38,966 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-18 04:00:08,944 [INFO] within has_valid_tenant_key
+2025-01-18 04:00:08,944 [INFO] [has_valid_tenant_key] TOKEN: 31f93fe92e954652910e82e1bad03b3b
+2025-01-18 04:00:08,958 [INFO] [has_valid_tenant_key] TENANT: <Tenant 1>
+2025-01-18 04:00:08,959 [INFO] [has_valid_tenant_key] Tenant is valid
+2025-01-18 04:00:08,959 [INFO] [/register] Entered register agent endpoint
+2025-01-18 04:00:08,960 [INFO] [/register] PAYLOAD: {'key': 'Alyssas-MBP.quynn.internal', 'token': '31f93fe92e954652910e82e1bad03b3b', 'version': '1.0.0', 'enabled': True, 'public_addr': '127.0.0.1/8', 'cpu_count': 8, 'logical_cpu_count': 8, 'memory': '8.00 GB', 'hostname': 'Alyssas-MBP.quynn.internal', 'family': 'darwin', 'release': 'darwin', 'uptime': 6239543}
+2025-01-18 04:00:08,990 [INFO] [/register] AGENT_ID: 9636e83757be431fbd40cd6179bb7bd4
+2025-01-18 04:00:09,012 [INFO] within has_valid_tenant_and_agent
+2025-01-18 04:00:09,023 [INFO] [/collection] Entered data_collection endpoint
+2025-01-18 04:00:16,054 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-18 04:00:16,109 [INFO] [/assets] Entered assets endpoint
+2025-01-18 04:06:45,911 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-18 04:06:45,989 [INFO] [/assets] Entered assets endpoint
+2025-01-19 02:43:19,561 [INFO] [/assets] Entered assets endpoint
+2025-01-19 02:43:19,587 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-25 01:59:52,202 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-25 01:59:52,225 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-25 01:59:57,406 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-25 01:59:57,482 [INFO] [/assets] Entered assets endpoint
+2025-01-25 02:00:24,614 [INFO] within has_valid_tenant_and_agent
+2025-01-25 02:00:24,662 [INFO] within has_valid_tenant_and_agent
+2025-01-25 02:00:41,703 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-25 02:00:41,782 [INFO] [/assets] Entered assets endpoint
+2025-01-25 02:00:43,147 [INFO] [/assets] Entered assets endpoint
+2025-01-25 02:00:56,717 [INFO] within has_valid_tenant_and_agent
+2025-01-25 02:00:56,759 [INFO] within has_valid_tenant_and_agent
+2025-01-25 02:01:31,177 [INFO] within has_valid_tenant_key
+2025-01-25 02:01:31,178 [INFO] [has_valid_tenant_key] TOKEN: 31f93fe92e954652910e82e1bad03b3b
+2025-01-25 02:01:31,199 [INFO] [has_valid_tenant_key] TENANT: <Tenant 1>
+2025-01-25 02:01:31,200 [INFO] [has_valid_tenant_key] Tenant is valid
+2025-01-25 02:01:31,200 [INFO] [/register] Entered register agent endpoint
+2025-01-25 02:01:31,201 [INFO] [/register] PAYLOAD: {'key': 'que-api01', 'token': '31f93fe92e954652910e82e1bad03b3b', 'version': '1.0.0', 'enabled': True, 'public_addr': '127.0.0.1/8', 'cpu_count': 6, 'logical_cpu_count': 6, 'memory': '7.75 GB', 'hostname': 'que-api01', 'family': 'linux', 'release': 'ubuntu', 'uptime': 887758}
+2025-01-25 02:01:31,281 [INFO] [/register] AGENT_ID: ac7ee8f0b93140b38092275fa62b6aa1
+2025-01-25 02:01:31,327 [INFO] within has_valid_tenant_and_agent
+2025-01-25 02:01:31,343 [INFO] [/collection] Entered data_collection endpoint
+2025-01-25 02:01:31,446 [INFO] within has_valid_tenant_and_agent
+2025-01-25 02:01:31,458 [INFO] [/collection] Entered data_collection endpoint
+2025-01-25 02:01:34,774 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-25 02:01:34,803 [INFO] [/assets] Entered assets endpoint
+2025-01-25 02:02:02,534 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-25 02:02:02,553 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-29 15:52:21,733 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-29 15:52:21,791 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-29 19:01:03,508 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-29 19:01:03,523 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-29 19:02:31,197 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-29 19:02:31,235 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-29 19:02:54,178 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-29 19:02:54,207 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-29 19:02:57,962 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-29 19:02:58,037 [INFO] [/assets] Entered assets endpoint
+2025-01-29 19:03:08,058 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-29 19:03:08,075 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-29 19:03:10,687 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-29 19:03:10,704 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-29 19:05:51,139 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-29 19:05:51,158 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-29 19:05:54,934 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-29 19:05:54,991 [INFO] [/assets] Entered assets endpoint
+2025-01-29 19:05:56,585 [INFO] [/groups] Entered groups endpoint
+2025-01-29 19:06:00,669 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-29 19:06:00,686 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-29 19:08:47,765 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-29 19:08:47,802 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-01-29 19:08:51,548 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-29 19:08:51,614 [INFO] [/assets] Entered assets endpoint
+2025-01-29 19:09:00,406 [INFO] [/stats/agent-summary] Entered get_agent_stats endpoint
+2025-01-29 19:09:00,500 [INFO] [/assets] Entered assets endpoint
+2025-01-29 19:12:06,372 [INFO] [/assets] Entered assets endpoint
+2025-01-29 19:12:08,558 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-01-29 19:12:08,575 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-02-18 02:04:25,573 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-02-18 02:04:25,600 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint
+2025-02-18 02:05:17,931 [INFO] [/graph/agent-active] Entered graph_get_agent_active endpoint
+2025-02-18 02:05:17,962 [INFO] [/graph/agent-registered] Entered graph_get_agent_registered endpoint

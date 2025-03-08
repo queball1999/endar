@@ -45,6 +45,7 @@ type AgentInfo struct {
 
 // Returns agent system info
 func GetAgentInfo(registrationKey string) AgentInfo {
+	log.Println("[GetAgentInfo] Key:", registrationKey)
 	hostname, _ := os.Hostname()
 	hostInfo, _ := host.Info()
 	memInfo, _ := mem.VirtualMemory()
